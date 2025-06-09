@@ -1,0 +1,178 @@
+{
+  "version": "1.0.0",
+  "reportDate": "2024-12-30",
+  "projectName": "Firesearch",
+  "schemaAnalysis": {
+    "namingConventions": {
+      "adherence": "95%",
+      "patterns": {
+        "files": {
+          "convention": "kebab-case",
+          "compliance": "100%",
+          "examples": ["langgraph-search-engine.ts", "context-processor.ts", "citation-tooltip.tsx"]
+        },
+        "components": {
+          "convention": "PascalCase",
+          "compliance": "100%",
+          "examples": ["Chat", "SearchDisplay", "MarkdownRenderer", "CitationTooltip"]
+        },
+        "functions": {
+          "convention": "camelCase",
+          "compliance": "98%",
+          "examples": ["useIsMobile", "getFaviconUrl", "handleError", "extractSubQueries"]
+        },
+        "constants": {
+          "convention": "UPPER_SNAKE_CASE",
+          "compliance": "100%",
+          "examples": ["SEARCH_CONFIG", "UI_CONFIG", "MODEL_CONFIG"]
+        }
+      },
+      "violations": []
+    },
+    "architecturalPatterns": {
+      "mainPattern": "State Machine + Event-Driven Architecture",
+      "layers": {
+        "orchestration": {
+          "pattern": "LangGraph State Machine",
+          "components": ["LangGraphSearchEngine"],
+          "responsibility": "Workflow orchestration and state management"
+        },
+        "service": {
+          "pattern": "Service Classes",
+          "components": ["FirecrawlClient", "ContextProcessor"],
+          "responsibility": "External integrations and business logic"
+        },
+        "ui": {
+          "pattern": "React Functional Components",
+          "components": ["Chat", "SearchDisplay", "MarkdownRenderer"],
+          "responsibility": "User interface and interaction"
+        },
+        "utility": {
+          "pattern": "Pure Functions / Modules",
+          "components": ["error-handler", "rate-limit", "favicon-utils"],
+          "responsibility": "Cross-cutting concerns"
+        }
+      }
+    },
+    "typeSystem": {
+      "coverage": "High",
+      "patterns": {
+        "eventTypes": {
+          "pattern": "Union Types for Events",
+          "example": "SearchEvent",
+          "usage": "Type-safe event handling"
+        },
+        "stateTypes": {
+          "pattern": "LangGraph Annotations",
+          "example": "SearchStateAnnotation",
+          "usage": "State management with reducers"
+        },
+        "dataModels": {
+          "pattern": "Interfaces for data structures",
+          "examples": ["Source", "SearchResult", "ProcessedSource"],
+          "usage": "Type-safe data handling"
+        }
+      }
+    },
+    "componentOrganization": {
+      "structure": {
+        "/app": {
+          "purpose": "Next.js pages and page components",
+          "pattern": "File-based routing"
+        },
+        "/lib": {
+          "purpose": "Core business logic",
+          "pattern": "Feature-based modules"
+        },
+        "/components/ui": {
+          "purpose": "Reusable UI components",
+          "pattern": "shadcn/ui component library"
+        },
+        "/hooks": {
+          "purpose": "Custom React hooks",
+          "pattern": "use* naming convention"
+        }
+      }
+    },
+    "workflowSchema": {
+      "type": "Linear with conditional branches",
+      "nodes": [
+        {
+          "name": "understand",
+          "triggers": "On search initiation",
+          "outputs": "Query understanding"
+        },
+        {
+          "name": "plan",
+          "triggers": "After understanding",
+          "outputs": "Sub-queries array"
+        },
+        {
+          "name": "search",
+          "triggers": "For each sub-query",
+          "outputs": "Search results"
+        },
+        {
+          "name": "scrape",
+          "triggers": "For sources without content",
+          "outputs": "Scraped content"
+        },
+        {
+          "name": "analyze",
+          "triggers": "After search/scrape",
+          "outputs": "Processed sources"
+        },
+        {
+          "name": "synthesize",
+          "triggers": "After analysis",
+          "outputs": "Final answer"
+        }
+      ],
+      "edges": {
+        "conditional": ["checkAnswers", "retry logic"],
+        "parallel": ["search operations", "source processing"]
+      }
+    },
+    "dependencies": {
+      "structure": {
+        "core": {
+          "internal": ["LangGraphSearchEngine → FirecrawlClient", "LangGraphSearchEngine → ContextProcessor"],
+          "external": ["@langchain/langgraph", "@langchain/openai", "@mendable/firecrawl-js"]
+        },
+        "ui": {
+          "internal": ["Chat → SearchDisplay", "MarkdownRenderer → CitationTooltip"],
+          "external": ["react", "@radix-ui/*", "ai"]
+        }
+      },
+      "patterns": {
+        "importAliases": {
+          "@/": "Root directory alias",
+          "usage": "Consistent across all files"
+        }
+      }
+    },
+    "schemaCompleteness": {
+      "documented": 14,
+      "total": 96,
+      "coverage": "14.6%",
+      "missingAreas": [
+        "UI component library (components/ui/*)",
+        "API routes",
+        "Script files",
+        "Configuration files (next.config.ts, tailwind.config.ts)"
+      ]
+    },
+    "recommendations": {
+      "immediate": [
+        "Document UI component library schemas",
+        "Add schema validation for API routes",
+        "Create type definitions for configuration"
+      ],
+      "future": [
+        "Implement runtime schema validation",
+        "Add OpenAPI schema for API endpoints",
+        "Create visual schema documentation"
+      ]
+    }
+  }
+} 

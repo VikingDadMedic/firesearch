@@ -1,0 +1,925 @@
+========================================
+CODEBASE TEXT CONSOLIDATION
+========================================
+This file contains the consolidated contents of all files from ./kit-analysis/* and ./package.json
+Generated on: [Auto-generated]
+========================================
+
+========================================
+FILE: ./package.json
+========================================
+{
+  "name": "firecrawl-template",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "benchmark": "tsx eval/benchmark-runner.ts",
+    "benchmark:quick": "tsx eval/benchmark-runner.ts factual_queries",
+    "test:firecrawl": "tsx eval/test-firecrawl-simple.ts"
+  },
+  "dependencies": {
+    "@ai-sdk/google": "^1.2.18",
+    "@ai-sdk/openai": "^1.3.22",
+    "@fal-ai/client": "^1.4.0",
+    "@langchain/core": "^0.3.57",
+    "@langchain/langgraph": "^0.2.74",
+    "@langchain/openai": "^0.5.11",
+    "@mendable/firecrawl-js": "^1.25.1",
+    "@radix-ui/react-dialog": "^1.1.13",
+    "@radix-ui/react-label": "^2.1.6",
+    "@radix-ui/react-popover": "^1.1.13",
+    "@radix-ui/react-scroll-area": "^1.2.8",
+    "@radix-ui/react-select": "^2.2.4",
+    "@radix-ui/react-separator": "^1.1.6",
+    "@radix-ui/react-slot": "^1.2.2",
+    "@radix-ui/react-switch": "^1.2.4",
+    "@radix-ui/react-tabs": "^1.1.11",
+    "@radix-ui/react-tooltip": "^1.2.6",
+    "@types/uuid": "^10.0.0",
+    "@upstash/ratelimit": "^2.0.5",
+    "@upstash/redis": "^1.34.9",
+    "ai": "^4.3.16",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.511.0",
+    "next": "15.3.2",
+    "next-themes": "^0.4.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "sonner": "^2.0.3",
+    "tailwind-merge": "^3.3.0",
+    "tailwindcss-animate": "^1.0.7",
+    "uuid": "^11.1.0",
+    "vaul": "^1.1.2"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@shadcn/ui": "^0.0.4",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.2",
+    "tailwindcss": "^4",
+    "tw-animate-css": "^1.3.0",
+    "typescript": "^5"
+  },
+  "packageManager": "pnpm@9.15.6+sha512.139cab068fdf0b751268179ac5f909b5be72afb4a75c513d1905d151befc8977b593d3cf8671ed83d4d6637c5c94b98ffbce108125de4a5a27a31233601a99de"
+}
+
+========================================
+FILE: ./kit-analysis/symbol-names.txt
+========================================
+MarkdownRendererProps
+AnimatedThinkingLine
+FoundSourcesGroup
+SourceProcessingLine
+SearchDisplay
+renderEvent
+search
+RootLayout
+SourcesList
+Chat
+Home
+CitationTooltipProps
+CitationTooltip
+useIsMobile
+FirecrawlClient
+FirecrawlClient
+constructor
+scrapeUrl
+mapUrl
+search
+ProcessedSource
+ContextProcessor
+ContextProcessor
+processSources
+extractKeywords
+processSource
+calculateRelevanceScore
+extractRelevantSections
+distributeCharacterBudget
+calculateSummaryLength
+summarizeSource
+calculateRelevanceFromSummary
+ErrorType
+ErrorType
+handleError
+handleNextError
+handleEdgeError
+getFaviconUrl
+getDefaultFavicon
+markFaviconFailed
+cn
+SearchPhase
+SearchPhase
+SearchEvent
+SearchEvent
+ErrorType
+ErrorType
+Source
+Source
+SearchResult
+SearchResult
+SearchStep
+SearchStep
+SearchState
+GraphConfig
+LangGraphSearchEngine
+LangGraphSearchEngine
+constructor
+getInitialSteps
+buildGraph
+search
+getCurrentDateContext
+analyzeQuery
+checkAnswersInSources
+extractSubQueries
+generateAlternativeSearchQueries
+scoreContent
+summarizeContent
+generateStreamingAnswer
+generateFollowUpQuestions
+GET
+Pagination
+PaginationContent
+PaginationItem
+PaginationLinkProps
+PaginationLink
+PaginationPrevious
+PaginationNext
+PaginationEllipsis
+Sheet
+SheetTrigger
+SheetClose
+SheetPortal
+SheetOverlay
+SheetContent
+SheetHeader
+SheetFooter
+SheetTitle
+SheetDescription
+TooltipProvider
+Tooltip
+TooltipTrigger
+TooltipContent
+Dialog
+DialogTrigger
+DialogPortal
+DialogClose
+DialogOverlay
+DialogContent
+DialogHeader
+DialogFooter
+DialogTitle
+DialogDescription
+SidebarContextProps
+useSidebar
+SidebarProvider
+Sidebar
+SidebarTrigger
+SidebarRail
+SidebarInset
+SidebarInput
+SidebarHeader
+SidebarFooter
+SidebarSeparator
+SidebarContent
+SidebarGroup
+SidebarGroupLabel
+SidebarGroupAction
+SidebarGroupContent
+SidebarMenu
+SidebarMenuItem
+SidebarMenuButton
+SidebarMenuAction
+SidebarMenuBadge
+SidebarMenuSkeleton
+SidebarMenuSub
+SidebarMenuSubItem
+SidebarMenuSubButton
+Separator
+ButtonProps
+ButtonProps
+Input
+Skeleton
+
+========================================
+FILE: ./kit-analysis/tree.txt
+========================================
+.
+├── app
+│   ├── api
+│   │   └── check-env
+│   │       └── route.ts
+│   │
+│   ├── chat.tsx
+│   ├── citation-tooltip.tsx
+│   ├── globals.css
+│   ├── layout.tsx
+│   ├── markdown-renderer.tsx
+│   ├── page.tsx
+│   ├── search-display.tsx
+│   └── search.tsx
+│
+├── components
+│   └── ui
+│       ├── button.tsx
+│       ├── dialog.tsx
+│       ├── input.tsx
+│       ├── pagination.tsx
+│       ├── separator.tsx
+│       ├── sheet.tsx
+│       ├── sidebar.tsx
+│       ├── skeleton.tsx
+│       └── tooltip.tsx
+│
+├── components.json
+│
+├── eslint.config.mjs
+│
+├── hooks
+│   └── use-mobile.ts
+│
+├── kit-analysis
+│   ├── chunks-agent-main.json
+│   ├── chunks-agent.json
+│   ├── chunks-chat.json
+│   ├── chunks-firecrawl.json
+│   ├── chunks-langgraph.json
+│   ├── chunks-page.json
+│   ├── chunks-search.json
+│   ├── erd.md
+│   ├── firesearch-index.json
+│   ├── refactor.md
+│   ├── repomix-output.txt
+│   ├── symbols.json
+│   ├── symbols.txt
+│   ├── tree.txt
+│   ├── usages-agent.json
+│   ├── usages-firecrawl.json
+│   └── usages-langgraph.json
+│
+├── lib
+│   ├── config.ts
+│   ├── context-processor.ts
+│   ├── error-handler.ts
+│   ├── favicon-utils.ts
+│   ├── firecrawl.ts
+│   ├── langgraph-search-engine.ts
+│   ├── rate-limit.ts
+│   └── utils.ts
+│
+├── next-env.d.ts
+│
+├── next.config.ts
+│
+├── package.json
+│
+├── pnpm-lock.yaml
+│
+├── postcss.config.mjs
+│
+├── public
+│   ├── assets
+│   │   └── twemoji-fire.svg
+│   │
+│   ├── favicon.ico
+│   ├── file.svg
+│   ├── firecrawl-logo-with-fire.png
+│   ├── firecrawl-logo.svg
+│   ├── globe.svg
+│   └── window.svg
+│
+├── README.md
+│
+├── tailwind.config.ts
+│
+├── tree.txt
+│
+├── tsconfig.json
+│
+└── vercel.json
+
+11 directories, 63 files
+
+========================================
+FILE: ./kit-analysis/symbols.txt
+========================================
+Name                           Type            File                                     Lines
+-----------------------------------------------------------------------------------------------
+MarkdownRendererProps          interface       app/markdown-renderer.tsx                4-4
+AnimatedThinkingLine           function        app/search-display.tsx                   9-9
+FoundSourcesGroup              function        app/search-display.tsx                   80-80
+SourceProcessingLine           function        app/search-display.tsx                   159-159
+SearchDisplay                  function        app/search-display.tsx                   221-221
+renderEvent                    function        app/search-display.tsx                   692-692
+search                         function        app/search.tsx                           6-6
+RootLayout                     function        app/layout.tsx                           15-15
+SourcesList                    function        app/chat.tsx                             30-30
+Chat                           function        app/chat.tsx                             184-184
+Home                           function        app/page.tsx                             3-3
+CitationTooltipProps           interface       app/citation-tooltip.tsx                 7-7
+CitationTooltip                function        app/citation-tooltip.tsx                 11-11
+useIsMobile                    function        hooks/use-mobile.ts                      4-4
+FirecrawlClient                class           lib/firecrawl.ts                         3-3
+FirecrawlClient                class           lib/firecrawl.ts                         3-3
+constructor                    method          lib/firecrawl.ts                         6-6
+scrapeUrl                      method          lib/firecrawl.ts                         14-14
+mapUrl                         method          lib/firecrawl.ts                         82-82
+search                         method          lib/firecrawl.ts                         102-102
+ProcessedSource                interface       lib/context-processor.ts                 4-4
+ContextProcessor               class           lib/context-processor.ts                 11-11
+ContextProcessor               class           lib/context-processor.ts                 11-11
+processSources                 method          lib/context-processor.ts                 21-21
+extractKeywords                method          lib/context-processor.ts                 46-46
+processSource                  method          lib/context-processor.ts                 66-66
+calculateRelevanceScore        method          lib/context-processor.ts                 120-120
+extractRelevantSections        method          lib/context-processor.ts                 142-142
+distributeCharacterBudget      method          lib/context-processor.ts                 206-206
+calculateSummaryLength         method          lib/context-processor.ts                 276-276
+summarizeSource                method          lib/context-processor.ts                 287-287
+calculateRelevanceFromSummary  method          lib/context-processor.ts                 365-365
+ErrorType                      enum            lib/error-handler.ts                     4-4
+ErrorType                      enum            lib/error-handler.ts                     4-4
+handleError                    function        lib/error-handler.ts                     37-37
+handleNextError                function        lib/error-handler.ts                     84-84
+handleEdgeError                function        lib/error-handler.ts                     95-95
+getFaviconUrl                  function        lib/favicon-utils.ts                     3-3
+getDefaultFavicon              function        lib/favicon-utils.ts                     18-18
+markFaviconFailed              function        lib/favicon-utils.ts                     22-22
+cn                             function        lib/utils.ts                             3-3
+SearchPhase                    type            lib/langgraph-search-engine.ts           8-8
+SearchPhase                    type            lib/langgraph-search-engine.ts           8-8
+SearchEvent                    type            lib/langgraph-search-engine.ts           17-17
+SearchEvent                    type            lib/langgraph-search-engine.ts           17-17
+ErrorType                      type            lib/langgraph-search-engine.ts           29-29
+ErrorType                      type            lib/langgraph-search-engine.ts           29-29
+Source                         interface       lib/langgraph-search-engine.ts           31-31
+Source                         interface       lib/langgraph-search-engine.ts           31-31
+SearchResult                   interface       lib/langgraph-search-engine.ts           39-39
+SearchResult                   interface       lib/langgraph-search-engine.ts           39-39
+SearchStep                     interface       lib/langgraph-search-engine.ts           46-46
+SearchStep                     interface       lib/langgraph-search-engine.ts           46-46
+SearchState                    type            lib/langgraph-search-engine.ts           152-152
+GraphConfig                    interface       lib/langgraph-search-engine.ts           155-155
+LangGraphSearchEngine          class           lib/langgraph-search-engine.ts           162-162
+LangGraphSearchEngine          class           lib/langgraph-search-engine.ts           162-162
+constructor                    method          lib/langgraph-search-engine.ts           170-170
+getInitialSteps                method          lib/langgraph-search-engine.ts           201-201
+buildGraph                     method          lib/langgraph-search-engine.ts           212-212
+search                         method          lib/langgraph-search-engine.ts           887-887
+getCurrentDateContext          method          lib/langgraph-search-engine.ts           938-938
+analyzeQuery                   method          lib/langgraph-search-engine.ts           953-953
+checkAnswersInSources          method          lib/langgraph-search-engine.ts           982-982
+extractSubQueries              method          lib/langgraph-search-engine.ts           1086-1086
+generateAlternativeSearchQueries method          lib/langgraph-search-engine.ts           1143-1143
+scoreContent                   method          lib/langgraph-search-engine.ts           1215-1215
+summarizeContent               method          lib/langgraph-search-engine.ts           1227-1227
+generateStreamingAnswer        method          lib/langgraph-search-engine.ts           1254-1254
+generateFollowUpQuestions      method          lib/langgraph-search-engine.ts           1304-1304
+GET                            function        app/api/check-env/route.ts               2-2
+Pagination                     function        components/ui/pagination.tsx             10-10
+PaginationContent              function        components/ui/pagination.tsx             22-22
+PaginationItem                 function        components/ui/pagination.tsx             35-35
+PaginationLinkProps            type            components/ui/pagination.tsx             39-39
+PaginationLink                 function        components/ui/pagination.tsx             44-44
+PaginationPrevious             function        components/ui/pagination.tsx             67-67
+PaginationNext                 function        components/ui/pagination.tsx             84-84
+PaginationEllipsis             function        components/ui/pagination.tsx             101-101
+Sheet                          function        components/ui/sheet.tsx                  8-8
+SheetTrigger                   function        components/ui/sheet.tsx                  12-12
+SheetClose                     function        components/ui/sheet.tsx                  18-18
+SheetPortal                    function        components/ui/sheet.tsx                  24-24
+SheetOverlay                   function        components/ui/sheet.tsx                  30-30
+SheetContent                   function        components/ui/sheet.tsx                  46-46
+SheetHeader                    function        components/ui/sheet.tsx                  83-83
+SheetFooter                    function        components/ui/sheet.tsx                  93-93
+SheetTitle                     function        components/ui/sheet.tsx                  103-103
+SheetDescription               function        components/ui/sheet.tsx                  116-116
+TooltipProvider                function        components/ui/tooltip.tsx                7-7
+Tooltip                        function        components/ui/tooltip.tsx                20-20
+TooltipTrigger                 function        components/ui/tooltip.tsx                30-30
+TooltipContent                 function        components/ui/tooltip.tsx                36-36
+Dialog                         function        components/ui/dialog.tsx                 8-8
+DialogTrigger                  function        components/ui/dialog.tsx                 14-14
+DialogPortal                   function        components/ui/dialog.tsx                 20-20
+DialogClose                    function        components/ui/dialog.tsx                 26-26
+DialogOverlay                  function        components/ui/dialog.tsx                 32-32
+DialogContent                  function        components/ui/dialog.tsx                 48-48
+DialogHeader                   function        components/ui/dialog.tsx                 74-74
+DialogFooter                   function        components/ui/dialog.tsx                 84-84
+DialogTitle                    function        components/ui/dialog.tsx                 97-97
+DialogDescription              function        components/ui/dialog.tsx                 110-110
+SidebarContextProps            type            components/ui/sidebar.tsx                34-34
+useSidebar                     function        components/ui/sidebar.tsx                46-46
+SidebarProvider                function        components/ui/sidebar.tsx                55-55
+Sidebar                        function        components/ui/sidebar.tsx                153-153
+SidebarTrigger                 function        components/ui/sidebar.tsx                255-255
+SidebarRail                    function        components/ui/sidebar.tsx                281-281
+SidebarInset                   function        components/ui/sidebar.tsx                306-306
+SidebarInput                   function        components/ui/sidebar.tsx                320-320
+SidebarHeader                  function        components/ui/sidebar.tsx                334-334
+SidebarFooter                  function        components/ui/sidebar.tsx                345-345
+SidebarSeparator               function        components/ui/sidebar.tsx                356-356
+SidebarContent                 function        components/ui/sidebar.tsx                370-370
+SidebarGroup                   function        components/ui/sidebar.tsx                384-384
+SidebarGroupLabel              function        components/ui/sidebar.tsx                395-395
+SidebarGroupAction             function        components/ui/sidebar.tsx                416-416
+SidebarGroupContent            function        components/ui/sidebar.tsx                439-439
+SidebarMenu                    function        components/ui/sidebar.tsx                453-453
+SidebarMenuItem                function        components/ui/sidebar.tsx                464-464
+SidebarMenuButton              function        components/ui/sidebar.tsx                497-497
+SidebarMenuAction              function        components/ui/sidebar.tsx                547-547
+SidebarMenuBadge               function        components/ui/sidebar.tsx                579-579
+SidebarMenuSkeleton            function        components/ui/sidebar.tsx                601-601
+SidebarMenuSub                 function        components/ui/sidebar.tsx                639-639
+SidebarMenuSubItem             function        components/ui/sidebar.tsx                654-654
+SidebarMenuSubButton           function        components/ui/sidebar.tsx                668-668
+Separator                      function        components/ui/separator.tsx              7-7
+ButtonProps                    interface       components/ui/button.tsx                 37-37
+ButtonProps                    interface       components/ui/button.tsx                 37-37
+Input                          function        components/ui/input.tsx                  4-4
+Skeleton                       function        components/ui/skeleton.tsx               2-2
+
+========================================
+FILE: ./kit-analysis/chunks-chat.json
+========================================
+--- function: SourcesList ---
+SourcesList
+
+--- function: Chat ---
+Chat
+
+========================================
+FILE: ./kit-analysis/chunks-page.json
+========================================
+--- function: Home ---
+Home
+
+========================================
+FILE: ./kit-analysis/chunks-search.json
+========================================
+--- function: search ---
+search
+
+========================================
+FILE: ./kit-analysis/chunks-firecrawl.json
+========================================
+--- class: FirecrawlClient ---
+FirecrawlClient
+
+--- class: FirecrawlClient ---
+FirecrawlClient
+
+--- method: constructor ---
+constructor
+
+--- method: scrapeUrl ---
+scrapeUrl
+
+--- method: mapUrl ---
+mapUrl
+
+--- method: search ---
+search
+
+========================================
+FILE: ./kit-analysis/chunks-langgraph.json
+========================================
+--- type: SearchPhase ---
+SearchPhase
+
+--- type: SearchPhase ---
+SearchPhase
+
+--- type: SearchEvent ---
+SearchEvent
+
+--- type: SearchEvent ---
+SearchEvent
+
+--- type: ErrorType ---
+ErrorType
+
+--- type: ErrorType ---
+ErrorType
+
+--- interface: Source ---
+Source
+
+--- interface: Source ---
+Source
+
+--- interface: SearchResult ---
+SearchResult
+
+--- interface: SearchResult ---
+SearchResult
+
+--- interface: SearchStep ---
+SearchStep
+
+--- interface: SearchStep ---
+SearchStep
+
+--- type: SearchState ---
+SearchState
+
+--- interface: GraphConfig ---
+GraphConfig
+
+--- class: LangGraphSearchEngine ---
+LangGraphSearchEngine
+
+--- class: LangGraphSearchEngine ---
+LangGraphSearchEngine
+
+--- method: constructor ---
+constructor
+
+--- method: getInitialSteps ---
+getInitialSteps
+
+--- method: buildGraph ---
+buildGraph
+
+--- method: search ---
+search
+
+--- method: getCurrentDateContext ---
+getCurrentDateContext
+
+--- method: analyzeQuery ---
+analyzeQuery
+
+--- method: checkAnswersInSources ---
+checkAnswersInSources
+
+--- method: extractSubQueries ---
+extractSubQueries
+
+--- method: generateAlternativeSearchQueries ---
+generateAlternativeSearchQueries
+
+--- method: scoreContent ---
+scoreContent
+
+--- method: summarizeContent ---
+summarizeContent
+
+--- method: generateStreamingAnswer ---
+generateStreamingAnswer
+
+--- method: generateFollowUpQuestions ---
+generateFollowUpQuestions
+
+========================================
+FILE: ./kit-analysis/chunks-agent-main.json
+========================================
+[Empty file]
+
+========================================
+FILE: ./kit-analysis/chunks-agent.json
+========================================
+[Empty file]
+
+========================================
+FILE: ./kit-analysis/usages-agent.json
+========================================
+No usages found for symbol 'Agent'.
+
+========================================
+FILE: ./kit-analysis/usages-firecrawl.json
+========================================
+No usages found for symbol 'Firecrawl'.
+
+========================================
+FILE: ./kit-analysis/usages-langgraph.json
+========================================
+No usages found for symbol 'langgraphSearch'.
+
+========================================
+FILE: ./kit-analysis/erd.md
+========================================
+# Codebase Entity-Relationship Diagram (ERD)
+
+This document provides an Entity-Relationship Diagram (ERD) that visualizes the main data models defined within the Firesearch codebase. The diagram is generated using Mermaid.
+
+```mermaid
+erDiagram
+    SearchState ||--o{ SubQuery : "has"
+    SearchState ||--o{ Source : "gathers"
+    SearchState ||--o{ FollowUpQuestion : "generates"
+    SubQuery }o--o{ Source : "references"
+
+    SearchState {
+        string query
+        string finalAnswer
+        string[] searchQueries
+        string understanding
+        int searchAttempt
+    }
+
+    SubQuery {
+        string question PK
+        string searchQuery
+        bool answered
+        float confidence
+        string answer
+    }
+
+    Source {
+        string url PK
+        string title
+        string content
+        string summary
+        float quality
+    }
+
+    FollowUpQuestion {
+        string question PK
+    }
+```
+
+### Explanation of Entities and Relationships
+
+*   **`SearchState`**: This is the central entity representing a single user query and its entire lifecycle. It holds the initial query, the final synthesized answer, and tracks the overall progress.
+
+*   **`SubQuery`**: A `SearchState` is broken down into one or more `SubQuery` entities. Each `SubQuery` represents a specific factual question that needs to be answered to fulfill the user's original request.
+    *   **Relationship**: `SearchState` has a one-to-many relationship with `SubQuery`.
+
+*   **`Source`**: This entity represents a web page that has been identified as a potential source of information. It stores the URL, title, and the processed content/summary of the page.
+    *   **Relationship**: `SearchState` gathers many `Source` entities during its execution.
+
+*   **`FollowUpQuestion`**: After a search is complete, the system generates several `FollowUpQuestion` entities to suggest next steps for the user.
+    *   **Relationship**: `SearchState` generates one or more `FollowUpQuestion`s.
+
+*   **`SubQuery` and `Source` Relationship**: A many-to-many relationship exists between `SubQuery` and `Source`. A single `SubQuery` can be answered by multiple sources, and a single `Source` can help answer multiple `SubQuery`s. The diagram shows this as "references," as the `SubQuery`'s `sources` field is an array of URLs that point to the `Source` entities.
+
+========================================
+FILE: ./kit-analysis/refactor.md
+========================================
+# Firesearch Refactoring and Developer Guide
+
+This document provides a comprehensive overview of the Firesearch application, its architecture, and a plan for refactoring. It also serves as a guide for developers looking to understand and contribute to the codebase.
+
+---
+
+## 1. Codebase Analysis & Structure
+
+The Firesearch application is a well-structured Next.js 15 project that leverages a modern technology stack to provide a sophisticated AI-powered search experience.
+
+### 1.1. Key Frameworks and Libraries
+
+*   **Frontend**:
+    *   **Next.js 15**: The core framework, utilizing the App Router and React Server Components.
+    *   **React 19**: The underlying UI library.
+    *   **shadcn/ui**: A collection of reusable UI components built on top of Radix UI.
+    *   **Tailwind CSS**: The utility-first CSS framework for styling.
+    *   **Lucide React**: For icons.
+    *   **`ai` (Vercel AI SDK)**: For streaming AI responses to the frontend.
+
+*   **Backend & Core Logic**:
+    *   **LangGraph**: The state machine for orchestrating the multi-step search, analysis, and synthesis process.
+    *   **Firecrawl**: The web scraping and content extraction service.
+    *   **OpenAI API (GPT-4o & GPT-4o-mini)**: For AI-powered search planning, summarization, answer generation, and follow-up questions.
+
+*   **Tooling**:
+    *   **TypeScript**: For static typing and improved developer experience.
+    *   **ESLint**: For code linting.
+    *   **pnpm**: As the package manager.
+
+### 1.2. Architecture & File Structure
+
+The application follows a clear client-server architecture. Here's a breakdown of the key directories:
+
+*   **`app/`**: Contains all the routing and UI pages, following the Next.js App Router structure.
+    *   **`page.tsx`**: The main entry point and landing page for the application.
+    *   **`chat.tsx`**: The primary component that manages the chat interface, user input, and messages.
+    *   **`search.tsx`**: A Next.js Server Action that acts as the bridge between the frontend and the backend search logic.
+    *   **`search-display.tsx`**: A client component that visualizes the real-time progress of the search operation.
+    *   **`api/`**: For any serverless functions or API routes.
+
+*   **`components/`**: Houses all reusable React components.
+    *   **`ui/`**: Contains the `shadcn/ui` components like `Button`, `Dialog`, `Input`, etc. These are the building blocks of the UI.
+
+*   **`lib/`**: This is where the core application logic resides.
+    *   **`langgraph-search-engine.ts`**: The heart of the application. This file defines the LangGraph state machine, orchestrating the entire search and synthesis process.
+    *   **`firecrawl.ts`**: A client for interacting with the Firecrawl API.
+    *   **`context-processor.ts`**: Handles the processing and summarization of scraped content.
+    *   **`config.ts`**: Contains all the configuration parameters for the search engine and models.
+
+*   **`public/`**: For all static assets like images, logos, and favicons.
+
+---
+
+## 2. Developer Guidance
+
+This section provides high-level guidance for common development tasks.
+
+### If you want to...
+
+*   **Change the overall search logic or flow**:
+    *   **Where to look**: `lib/langgraph-search-engine.ts`.
+    *   **Considerations**: This file defines the `StateGraph`. You'll need to understand the nodes (`understand`, `plan`, `search`, `analyze`, `synthesize`) and the conditional edges that control the flow between them. Modifying this requires an understanding of LangGraph's state management.
+
+*   **Modify the main chat UI**:
+    *   **Where to look**: `app/chat.tsx`.
+    *   **Considerations**: This is a large component that manages the state of the conversation. It's a prime candidate for refactoring into smaller, more manageable components. For now, this is where you'll find the main input form and the message rendering loop.
+
+*   **Adjust the AI's prompts or behavior**:
+    *   **Where to look**: The prompts are defined within the methods of `lib/langgraph-search-engine.ts` (e.g., `analyzeQuery`, `checkAnswersInSources`). The model parameters (like temperature) are in `lib/config.ts`.
+    *   **Considerations**: Prompt engineering is key to the quality of the results. Small changes can have a significant impact.
+
+*   **Change the styling, theme, or add custom animations**:
+    *   **Where to look**: `app/globals.css` for global styles and CSS variables. `tailwind.config.ts` for theme configuration (colors, fonts, etc.).
+    *   **Considerations**: The project uses CSS variables for theming, which are defined in `app/globals.css`. New animations can also be added there.
+
+*   **Improve how web content is processed or summarized**:
+    *   **Where to look**: `lib/context-processor.ts`.
+    *   **Considerations**: This class is responsible for taking the raw content from Firecrawl and preparing it for the AI. You can adjust the summarization prompts and logic here to extract different types of information.
+
+*   **Add a new UI component**:
+    *   **Where to look**: `components/ui/`.
+    *   **Considerations**: It's best to use the `shadcn/ui` CLI to add new components to maintain consistency with the existing component set.
+
+---
+
+## 3. Refactoring Plan
+
+The following sections outline the plan for refactoring the codebase to improve its structure and maintainability.
+
+### 3.1. Refactoring Goals
+
+*   **Improve Modularity**: Decouple the core logic from the UI.
+*   **Enhance Scalability**: Prepare the codebase for future features.
+*   **Standardize State Management**: Implement a more robust state management solution.
+*   **Improve Developer Experience**: Make the codebase easier to understand and contribute to.
+
+### 3.2. Proposed Changes
+
+*   **Component-Based Architecture**:
+    *   Break down `app/chat.tsx` into smaller, focused components (e.g., `MessageList`, `MessageInput`, `Suggestions`, `ApiKeyModal`).
+    *   Create a more organized directory structure under `app/components/` for different categories of components.
+
+*   **State Management**:
+    *   Introduce a lightweight state management library like **Zustand** or **Jotai** to replace the `useState`-based logic in `app/chat.tsx`.
+
+*   **Backend and Core Logic**:
+    *   Refactor `lib/langgraph-search-engine.ts` to separate the prompt definitions from the graph structure, making both easier to manage.
+
+### 3.3. Step-by-Step Plan
+
+1.  **Component Refactoring**:
+    *   Create new component files under `app/components/chat/` for the different parts of the chat UI.
+    *   Move the relevant JSX and logic from `app/chat.tsx` into these new components.
+    *   Create `app/components/modals/ApiKeyModal.tsx`.
+
+2.  **State Management Refactoring**:
+    *   Add a state management library (e.g., `pnpm add zustand`).
+    *   Create a global store in `lib/store.ts` to manage application state (messages, API key, etc.).
+    *   Refactor the `Chat` component and its new children to use the global store.
+
+3.  **Backend Refactoring**:
+    *   Create a new file `lib/prompts.ts` to store all the system and user prompts used in the `LangGraphSearchEngine`.
+    *   Import these prompts into `lib/langgraph-search-engine.ts`.
+
+---
+
+## 4. Future Considerations
+
+*   **User Authentication**: Add user accounts to save search history and preferences.
+*   **Search History**: Implement a feature to save and revisit previous searches.
+*   **Caching**: Implement a caching layer for API responses to improve performance and reduce costs.
+*   **Testing**: Add a comprehensive suite of unit and integration tests.
+
+========================================
+FILE: ./kit-analysis/file-tree.json (Sample - First 50 entries)
+========================================
+[
+  {
+    "path": "vercel.json",
+    "is_dir": false,
+    "name": "vercel.json",
+    "size": 150
+  },
+  {
+    "path": "postcss.config.mjs",
+    "is_dir": false,
+    "name": "postcss.config.mjs",
+    "size": 81
+  },
+  {
+    "path": "README.md",
+    "is_dir": false,
+    "name": "README.md",
+    "size": 8605
+  },
+  {
+    "path": "tailwind.config.ts",
+    "is_dir": false,
+    "name": "tailwind.config.ts",
+    "size": 1869
+  },
+  {
+    "path": ".gitignore",
+    "is_dir": false,
+    "name": ".gitignore",
+    "size": 518
+  },
+  {
+    "path": "package.json",
+    "is_dir": false,
+    "name": "package.json",
+    "size": 2036
+  },
+  {
+    "path": "components.json",
+    "is_dir": false,
+    "name": "components.json",
+    "size": 426
+  },
+  {
+    "path": "tsconfig.json",
+    "is_dir": false,
+    "name": "tsconfig.json",
+    "size": 598
+  },
+  {
+    "path": "eslint.config.mjs",
+    "is_dir": false,
+    "name": "eslint.config.mjs",
+    "size": 393
+  },
+  {
+    "path": "next.config.ts",
+    "is_dir": false,
+    "name": "next.config.ts",
+    "size": 267
+  }
+  // ... (truncated for brevity)
+]
+
+========================================
+FILE: ./kit-analysis/repomix-output.txt (Sample - First 100 lines)
+========================================
+This file is a merged representation of the entire codebase, combined into a single document by Repomix.
+The content has been processed where empty lines have been removed, content has been formatted for parsing in plain style.
+
+================================================================
+File Summary
+================================================================
+
+Purpose:
+--------
+This file contains a packed representation of the entire repository's contents.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+
+File Format:
+------------
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+5. Multiple file entries, each consisting of:
+  a. A separator line (================)
+  b. The file path (File: path/to/file)
+  c. Another separator line
+  d. The full contents of the file
+  e. A blank line
+
+Usage Guidelines:
+-----------------
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+
+Notes:
+------
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Empty lines have been removed from all files
+- Content has been formatted for parsing in plain style
+- Files are sorted by Git change count (files with more changes are at the bottom)
+
+... (truncated for brevity - the actual file is 569KB with 16,006 lines)
+
+========================================
+END OF CONSOLIDATION
+========================================
+Total files included: 18 files from ./kit-analysis/* + ./package.json
+Note: Large files like repomix-output.txt, firesearch-index.json, symbols.json, and file-tree.json have been truncated or sampled for readability.
+Generated successfully!

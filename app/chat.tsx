@@ -658,7 +658,7 @@ export function Chat() {
           <DialogHeader>
             <DialogTitle>Firecrawl API Key Required</DialogTitle>
             <DialogDescription>
-              To use Firesearch, you need a Firecrawl API key. You can get one for free.
+              To use Toby 2.0 Deep Research, you need a Firecrawl API key. You can get one for free.
             </DialogDescription>
           </DialogHeader>
           <div className="grid gap-4 py-4">

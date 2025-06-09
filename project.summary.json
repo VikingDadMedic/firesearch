@@ -1,0 +1,87 @@
+{
+  "version": "1.0.0",
+  "projectName": "Firesearch",
+  "tagline": "AI-powered deep research search engine",
+  "description": "Firesearch is a sophisticated search application that uses LangGraph state machines to orchestrate multi-step research workflows. It breaks down complex queries, searches the web, analyzes content, and synthesizes comprehensive answers with citations.",
+  "techStack": {
+    "frontend": {
+      "framework": "Next.js 15 (App Router)",
+      "ui": "React 19",
+      "styling": "Tailwind CSS + shadcn/ui",
+      "language": "TypeScript"
+    },
+    "backend": {
+      "orchestration": "LangGraph (LangChain)",
+      "ai": "OpenAI GPT-4o",
+      "scraping": "Firecrawl API",
+      "rateLimit": "Upstash Redis"
+    }
+  },
+  "architecture": {
+    "pattern": "State Machine + Event-Driven",
+    "layers": [
+      "Orchestration (LangGraph)",
+      "Services (Firecrawl, ContextProcessor)",
+      "UI Components (React)",
+      "Utilities"
+    ],
+    "workflow": {
+      "phases": [
+        "Understanding - Analyze user query",
+        "Planning - Extract sub-queries",
+        "Searching - Execute web searches",
+        "Scraping - Fetch detailed content",
+        "Analyzing - Process and score sources",
+        "Synthesizing - Generate final answer"
+      ]
+    }
+  },
+  "keyFeatures": [
+    "Multi-step research workflow with LangGraph",
+    "Intelligent query decomposition",
+    "Parallel web search and scraping",
+    "Content relevance scoring",
+    "AI-powered summarization",
+    "Real-time search visualization",
+    "Citation management with tooltips",
+    "Streaming response generation"
+  ],
+  "statistics": {
+    "totalFiles": 96,
+    "totalSymbols": 167,
+    "coreComponents": 3,
+    "uiComponents": 7,
+    "utilityFiles": 4,
+    "totalLinesOfCode": "~5000+",
+    "largestFile": "lib/langgraph-search-engine.ts (49KB)"
+  },
+  "dependencies": {
+    "major": [
+      "@langchain/langgraph",
+      "@mendable/firecrawl-js",
+      "ai (Vercel AI SDK)",
+      "@radix-ui/*"
+    ],
+    "count": 25
+  },
+  "technicalDebt": {
+    "high": [
+      "Large files need refactoring (3 files > 30KB)",
+      "No test coverage",
+      "State management scattered across components"
+    ],
+    "medium": [
+      "API keys managed client-side",
+      "No error boundary implementation"
+    ]
+  },
+  "projectStatus": {
+    "phase": "MVP/Beta",
+    "readiness": "Production-capable with limitations",
+    "mainChallenges": [
+      "Component size and complexity",
+      "Lack of testing infrastructure",
+      "State management architecture"
+    ]
+  }
+} 

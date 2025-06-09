@@ -1,0 +1,234 @@
+{
+  "version": "1.0.0",
+  "projectName": "Firesearch",
+  "generatedDate": "2024-12-30",
+  "taskCategories": {
+    "refactoring": {
+      "priority": "high",
+      "tasks": [
+        {
+          "id": "refactor-1",
+          "title": "Refactor LangGraphSearchEngine",
+          "description": "Break down 49KB file into smaller modules",
+          "file": "lib/langgraph-search-engine.ts",
+          "estimatedEffort": "8-12 hours",
+          "suggestedModules": [
+            "nodes/understand-node.ts",
+            "nodes/plan-node.ts",
+            "nodes/search-node.ts",
+            "nodes/analyze-node.ts",
+            "nodes/synthesize-node.ts",
+            "utils/prompt-templates.ts",
+            "types/search-types.ts"
+          ]
+        },
+        {
+          "id": "refactor-2",
+          "title": "Refactor Chat Component",
+          "description": "Extract sub-components from 30KB file",
+          "file": "app/chat.tsx",
+          "estimatedEffort": "4-6 hours",
+          "suggestedComponents": [
+            "ChatInput.tsx",
+            "ChatHistory.tsx",
+            "ChatMessage.tsx",
+            "ChatSources.tsx"
+          ]
+        },
+        {
+          "id": "refactor-3",
+          "title": "Refactor SearchDisplay",
+          "description": "Modularize 37KB visualization component",
+          "file": "app/search-display.tsx",
+          "estimatedEffort": "6-8 hours",
+          "suggestedComponents": [
+            "SearchPhaseIndicator.tsx",
+            "SearchEventRenderer.tsx",
+            "SourceCards.tsx",
+            "AnimationComponents.tsx"
+          ]
+        }
+      ]
+    },
+    "testing": {
+      "priority": "high",
+      "tasks": [
+        {
+          "id": "test-1",
+          "title": "Set up testing infrastructure",
+          "description": "Configure Jest/Vitest and React Testing Library",
+          "estimatedEffort": "2-3 hours"
+        },
+        {
+          "id": "test-2",
+          "title": "Write unit tests for core logic",
+          "description": "Test LangGraphSearchEngine methods and state transitions",
+          "estimatedEffort": "8-10 hours"
+        },
+        {
+          "id": "test-3",
+          "title": "Write component tests",
+          "description": "Test UI components with user interactions",
+          "estimatedEffort": "6-8 hours"
+        },
+        {
+          "id": "test-4",
+          "title": "Add E2E tests",
+          "description": "Set up Playwright for end-to-end testing",
+          "estimatedEffort": "4-6 hours"
+        }
+      ]
+    },
+    "stateManagement": {
+      "priority": "high",
+      "tasks": [
+        {
+          "id": "state-1",
+          "title": "Implement centralized state management",
+          "description": "Add Zustand or Redux for global state",
+          "estimatedEffort": "4-6 hours",
+          "recommendation": "Zustand for simpler API"
+        },
+        {
+          "id": "state-2",
+          "title": "Migrate local state to store",
+          "description": "Move component state to centralized store",
+          "estimatedEffort": "3-4 hours"
+        }
+      ]
+    },
+    "security": {
+      "priority": "critical",
+      "tasks": [
+        {
+          "id": "security-1",
+          "title": "Move API keys to server-side",
+          "description": "Implement API routes for OpenAI and Firecrawl calls",
+          "estimatedEffort": "3-4 hours"
+        },
+        {
+          "id": "security-2",
+          "title": "Add environment validation",
+          "description": "Validate all required env vars on startup",
+          "estimatedEffort": "1-2 hours"
+        },
+        {
+          "id": "security-3",
+          "title": "Implement proper CORS handling",
+          "description": "Configure CORS for API routes",
+          "estimatedEffort": "1-2 hours"
+        }
+      ]
+    },
+    "documentation": {
+      "priority": "medium",
+      "tasks": [
+        {
+          "id": "docs-1",
+          "title": "Document UI component library",
+          "description": "Add JSDoc comments to all shadcn/ui components",
+          "estimatedEffort": "3-4 hours"
+        },
+        {
+          "id": "docs-2",
+          "title": "Create API documentation",
+          "description": "Document all API routes and expected payloads",
+          "estimatedEffort": "2-3 hours"
+        },
+        {
+          "id": "docs-3",
+          "title": "Write architecture guide",
+          "description": "Create detailed guide on LangGraph workflow",
+          "estimatedEffort": "2-3 hours"
+        }
+      ]
+    },
+    "performance": {
+      "priority": "medium",
+      "tasks": [
+        {
+          "id": "perf-1",
+          "title": "Implement caching strategy",
+          "description": "Add Redis caching for search results",
+          "estimatedEffort": "4-5 hours"
+        },
+        {
+          "id": "perf-2",
+          "title": "Optimize bundle size",
+          "description": "Analyze and reduce JavaScript bundle",
+          "estimatedEffort": "2-3 hours"
+        },
+        {
+          "id": "perf-3",
+          "title": "Add loading states",
+          "description": "Implement proper loading skeletons",
+          "estimatedEffort": "2-3 hours"
+        }
+      ]
+    },
+    "accessibility": {
+      "priority": "medium",
+      "tasks": [
+        {
+          "id": "a11y-1",
+          "title": "Add ARIA labels",
+          "description": "Ensure all interactive elements have proper labels",
+          "estimatedEffort": "2-3 hours"
+        },
+        {
+          "id": "a11y-2",
+          "title": "Keyboard navigation",
+          "description": "Ensure full keyboard accessibility",
+          "estimatedEffort": "3-4 hours"
+        },
+        {
+          "id": "a11y-3",
+          "title": "Screen reader testing",
+          "description": "Test with NVDA/JAWS",
+          "estimatedEffort": "2-3 hours"
+        }
+      ]
+    },
+    "features": {
+      "priority": "low",
+      "tasks": [
+        {
+          "id": "feature-1",
+          "title": "Add search history",
+          "description": "Store and display previous searches",
+          "estimatedEffort": "4-5 hours"
+        },
+        {
+          "id": "feature-2",
+          "title": "Export functionality",
+          "description": "Allow exporting search results as PDF/Markdown",
+          "estimatedEffort": "3-4 hours"
+        },
+        {
+          "id": "feature-3",
+          "title": "Dark mode support",
+          "description": "Implement theme switching",
+          "estimatedEffort": "2-3 hours"
+        }
+      ]
+    }
+  },
+  "totalEstimatedEffort": "90-120 hours",
+  "recommendedOrder": [
+    "security-1",
+    "test-1",
+    "refactor-1",
+    "state-1",
+    "refactor-2",
+    "refactor-3",
+    "test-2",
+    "docs-3"
+  ],
+  "quickWins": [
+    "security-2",
+    "security-3",
+    "a11y-1",
+    "perf-3",
+    "docs-2"
+  ]
+} 

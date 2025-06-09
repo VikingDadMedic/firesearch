@@ -1,0 +1,434 @@
+[
+  {
+    "path": "vercel.json",
+    "is_dir": false,
+    "name": "vercel.json",
+    "size": 150
+  },
+  {
+    "path": "postcss.config.mjs",
+    "is_dir": false,
+    "name": "postcss.config.mjs",
+    "size": 81
+  },
+  {
+    "path": "README.md",
+    "is_dir": false,
+    "name": "README.md",
+    "size": 8605
+  },
+  {
+    "path": "tailwind.config.ts",
+    "is_dir": false,
+    "name": "tailwind.config.ts",
+    "size": 1869
+  },
+  {
+    "path": ".gitignore",
+    "is_dir": false,
+    "name": ".gitignore",
+    "size": 518
+  },
+  {
+    "path": "package.json",
+    "is_dir": false,
+    "name": "package.json",
+    "size": 2036
+  },
+  {
+    "path": "components.json",
+    "is_dir": false,
+    "name": "components.json",
+    "size": 426
+  },
+  {
+    "path": "tsconfig.json",
+    "is_dir": false,
+    "name": "tsconfig.json",
+    "size": 598
+  },
+  {
+    "path": "eslint.config.mjs",
+    "is_dir": false,
+    "name": "eslint.config.mjs",
+    "size": 393
+  },
+  {
+    "path": "next.config.ts",
+    "is_dir": false,
+    "name": "next.config.ts",
+    "size": 267
+  },
+  {
+    "path": "app",
+    "is_dir": true,
+    "name": "app",
+    "size": 0
+  },
+  {
+    "path": "app/markdown-renderer.tsx",
+    "is_dir": false,
+    "name": "markdown-renderer.tsx",
+    "size": 4401
+  },
+  {
+    "path": "app/search-display.tsx",
+    "is_dir": false,
+    "name": "search-display.tsx",
+    "size": 37002
+  },
+  {
+    "path": "app/search.tsx",
+    "is_dir": false,
+    "name": "search.tsx",
+    "size": 864
+  },
+  {
+    "path": "app/layout.tsx",
+    "is_dir": false,
+    "name": "layout.tsx",
+    "size": 751
+  },
+  {
+    "path": "app/chat.tsx",
+    "is_dir": false,
+    "name": "chat.tsx",
+    "size": 30740
+  },
+  {
+    "path": "app/page.tsx",
+    "is_dir": false,
+    "name": "page.tsx",
+    "size": 4733
+  },
+  {
+    "path": "app/globals.css",
+    "is_dir": false,
+    "name": "globals.css",
+    "size": 5431
+  },
+  {
+    "path": "app/citation-tooltip.tsx",
+    "is_dir": false,
+    "name": "citation-tooltip.tsx",
+    "size": 3595
+  },
+  {
+    "path": "kit-analysis",
+    "is_dir": true,
+    "name": "kit-analysis",
+    "size": 0
+  },
+  {
+    "path": "kit-analysis/symbols.txt",
+    "is_dir": false,
+    "name": "symbols.txt",
+    "size": 12768
+  },
+  {
+    "path": "kit-analysis/usages-firecrawl.json",
+    "is_dir": false,
+    "name": "usages-firecrawl.json",
+    "size": 40
+  },
+  {
+    "path": "kit-analysis/usages-agent.json",
+    "is_dir": false,
+    "name": "usages-agent.json",
+    "size": 36
+  },
+  {
+    "path": "kit-analysis/erd.md",
+    "is_dir": false,
+    "name": "erd.md",
+    "size": 2346
+  },
+  {
+    "path": "kit-analysis/file-tree.json",
+    "is_dir": false,
+    "name": "file-tree.json",
+    "size": 0
+  },
+  {
+    "path": "kit-analysis/usages-langgraph.json",
+    "is_dir": false,
+    "name": "usages-langgraph.json",
+    "size": 46
+  },
+  {
+    "path": "kit-analysis/firesearch-index.json",
+    "is_dir": false,
+    "name": "firesearch-index.json",
+    "size": 49704
+  },
+  {
+    "path": "kit-analysis/chunks-page.json",
+    "is_dir": false,
+    "name": "chunks-page.json",
+    "size": 29
+  },
+  {
+    "path": "kit-analysis/repomix-output.txt",
+    "is_dir": false,
+    "name": "repomix-output.txt",
+    "size": 231785
+  },
+  {
+    "path": "kit-analysis/chunks-langgraph.json",
+    "is_dir": false,
+    "name": "chunks-langgraph.json",
+    "size": 1362
+  },
+  {
+    "path": "kit-analysis/refactor.md",
+    "is_dir": false,
+    "name": "refactor.md",
+    "size": 7565
+  },
+  {
+    "path": "kit-analysis/chunks-search.json",
+    "is_dir": false,
+    "name": "chunks-search.json",
+    "size": 33
+  },
+  {
+    "path": "kit-analysis/chunks-firecrawl.json",
+    "is_dir": false,
+    "name": "chunks-firecrawl.json",
+    "size": 236
+  },
+  {
+    "path": "kit-analysis/chunks-agent-main.json",
+    "is_dir": false,
+    "name": "chunks-agent-main.json",
+    "size": 0
+  },
+  {
+    "path": "kit-analysis/chunks-chat.json",
+    "is_dir": false,
+    "name": "chunks-chat.json",
+    "size": 72
+  },
+  {
+    "path": "kit-analysis/tree.txt",
+    "is_dir": false,
+    "name": "tree.txt",
+    "size": 2279
+  },
+  {
+    "path": "kit-analysis/chunks-agent.json",
+    "is_dir": false,
+    "name": "chunks-agent.json",
+    "size": 0
+  },
+  {
+    "path": "kit-analysis/symbols.json",
+    "is_dir": false,
+    "name": "symbols.json",
+    "size": 29051
+  },
+  {
+    "path": "public",
+    "is_dir": true,
+    "name": "public",
+    "size": 0
+  },
+  {
+    "path": "public/firecrawl-logo-with-fire.png",
+    "is_dir": false,
+    "name": "firecrawl-logo-with-fire.png",
+    "size": 110268
+  },
+  {
+    "path": "public/favicon.ico",
+    "is_dir": false,
+    "name": "favicon.ico",
+    "size": 15406
+  },
+  {
+    "path": "public/file.svg",
+    "is_dir": false,
+    "name": "file.svg",
+    "size": 391
+  },
+  {
+    "path": "public/firecrawl-logo.svg",
+    "is_dir": false,
+    "name": "firecrawl-logo.svg",
+    "size": 6156
+  },
+  {
+    "path": "public/globe.svg",
+    "is_dir": false,
+    "name": "globe.svg",
+    "size": 1035
+  },
+  {
+    "path": "public/window.svg",
+    "is_dir": false,
+    "name": "window.svg",
+    "size": 385
+  },
+  {
+    "path": "hooks",
+    "is_dir": true,
+    "name": "hooks",
+    "size": 0
+  },
+  {
+    "path": "hooks/use-mobile.ts",
+    "is_dir": false,
+    "name": "use-mobile.ts",
+    "size": 565
+  },
+  {
+    "path": "lib",
+    "is_dir": true,
+    "name": "lib",
+    "size": 0
+  },
+  {
+    "path": "lib/firecrawl.ts",
+    "is_dir": false,
+    "name": "firecrawl.ts",
+    "size": 5263
+  },
+  {
+    "path": "lib/context-processor.ts",
+    "is_dir": false,
+    "name": "context-processor.ts",
+    "size": 13722
+  },
+  {
+    "path": "lib/error-handler.ts",
+    "is_dir": false,
+    "name": "error-handler.ts",
+    "size": 3565
+  },
+  {
+    "path": "lib/favicon-utils.ts",
+    "is_dir": false,
+    "name": "favicon-utils.ts",
+    "size": 964
+  },
+  {
+    "path": "lib/utils.ts",
+    "is_dir": false,
+    "name": "utils.ts",
+    "size": 166
+  },
+  {
+    "path": "lib/langgraph-search-engine.ts",
+    "is_dir": false,
+    "name": "langgraph-search-engine.ts",
+    "size": 49419
+  },
+  {
+    "path": "lib/config.ts",
+    "is_dir": false,
+    "name": "config.ts",
+    "size": 1975
+  },
+  {
+    "path": "lib/rate-limit.ts",
+    "is_dir": false,
+    "name": "rate-limit.ts",
+    "size": 1837
+  },
+  {
+    "path": "app/api",
+    "is_dir": true,
+    "name": "api",
+    "size": 0
+  },
+  {
+    "path": "app/api/check-env",
+    "is_dir": true,
+    "name": "check-env",
+    "size": 0
+  },
+  {
+    "path": "app/api/check-env/route.ts",
+    "is_dir": false,
+    "name": "route.ts",
+    "size": 326
+  },
+  {
+    "path": "components",
+    "is_dir": true,
+    "name": "components",
+    "size": 0
+  },
+  {
+    "path": "components/ui",
+    "is_dir": true,
+    "name": "ui",
+    "size": 0
+  },
+  {
+    "path": "components/ui/pagination.tsx",
+    "is_dir": false,
+    "name": "pagination.tsx",
+    "size": 2712
+  },
+  {
+    "path": "components/ui/sheet.tsx",
+    "is_dir": false,
+    "name": "sheet.tsx",
+    "size": 4090
+  },
+  {
+    "path": "components/ui/tooltip.tsx",
+    "is_dir": false,
+    "name": "tooltip.tsx",
+    "size": 1891
+  },
+  {
+    "path": "components/ui/dialog.tsx",
+    "is_dir": false,
+    "name": "dialog.tsx",
+    "size": 3813
+  },
+  {
+    "path": "components/ui/sidebar.tsx",
+    "is_dir": false,
+    "name": "sidebar.tsx",
+    "size": 21633
+  },
+  {
+    "path": "components/ui/separator.tsx",
+    "is_dir": false,
+    "name": "separator.tsx",
+    "size": 704
+  },
+  {
+    "path": "components/ui/button.tsx",
+    "is_dir": false,
+    "name": "button.tsx",
+    "size": 3282
+  },
+  {
+    "path": "components/ui/input.tsx",
+    "is_dir": false,
+    "name": "input.tsx",
+    "size": 967
+  },
+  {
+    "path": "components/ui/skeleton.tsx",
+    "is_dir": false,
+    "name": "skeleton.tsx",
+    "size": 276
+  },
+  {
+    "path": "public/assets",
+    "is_dir": true,
+    "name": "assets",
+    "size": 0
+  },
+  {
+    "path": "public/assets/twemoji-fire.svg",
+    "is_dir": false,
+    "name": "twemoji-fire.svg",
+    "size": 1010
+  }
+]

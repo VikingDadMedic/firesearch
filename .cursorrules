@@ -1,0 +1,70 @@
+# Firesearch Project Rules
+
+You are working on Firesearch, an AI-powered search application built with:
+- Next.js 15 (App Router)
+- React 19
+- TypeScript
+- LangGraph for search orchestration
+- Firecrawl for web scraping
+- OpenAI GPT-4o for AI capabilities
+- Tailwind CSS + shadcn/ui for styling
+
+## Project Context
+
+This is a sophisticated search engine that:
+1. Understands user queries using AI
+2. Breaks them into sub-questions
+3. Searches and scrapes the web
+4. Analyzes and synthesizes information
+5. Provides comprehensive, cited answers
+
+## Key Files to Know
+
+- `lib/langgraph-search-engine.ts` - Core search orchestration (49KB - needs refactoring)
+- `app/chat.tsx` - Main UI component (30KB - needs refactoring) 
+- `app/search-display.tsx` - Search visualization (37KB - needs refactoring)
+- `lib/firecrawl.ts` - Web scraping client
+- `lib/context-processor.ts` - Content processing and summarization
+
+## Current Tech Debt
+
+1. Large components need breaking down (chat.tsx, search-display.tsx)
+2. State management needs centralization (currently using useState)
+3. API keys are client-side (need server-side management)
+4. No test coverage
+
+## Code Style
+
+- Use functional components with TypeScript
+- Prefer named exports
+- Use kebab-case for file names
+- Use PascalCase for components
+- Use camelCase for functions/variables
+- Keep files under 500 lines
+
+## When Making Changes
+
+1. Check if there's a relevant rule in `.cursor/rules/`
+2. Follow existing patterns in the codebase
+3. Consider performance implications
+4. Ensure proper error handling
+5. Add loading states for async operations
+6. Make components accessible
+
+## Common Tasks
+
+- To understand the search flow: Look at `lib/langgraph-search-engine.ts`
+- To modify the UI: Start with `app/chat.tsx`
+- To change search behavior: Check the LangGraph nodes
+- To adjust prompts: They're embedded in the search engine (to be extracted)
+
+## Dependencies
+
+Major dependencies to be aware of:
+- @langchain/langgraph - State machine for search
+- @mendable/firecrawl-js - Web scraping
+- ai (Vercel AI SDK) - Streaming responses
+- @radix-ui/* - UI primitives
+- @upstash/redis - Rate limiting
+
+Remember: The codebase is well-structured but reaching complexity limits. Refactoring is a priority. 

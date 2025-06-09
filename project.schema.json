@@ -1,0 +1,200 @@
+{
+  "version": "1.0.0",
+  "projectName": "Firesearch",
+  "description": "AI-powered search application using LangGraph, Firecrawl, and OpenAI",
+  "architecture": {
+    "type": "Next.js App Router + LangGraph State Machine",
+    "layers": [
+      {
+        "name": "Orchestration Layer",
+        "description": "LangGraph state machine for search workflow",
+        "components": ["LangGraphSearchEngine"],
+        "location": "/lib"
+      },
+      {
+        "name": "Service Layer",
+        "description": "External services and content processing",
+        "components": ["FirecrawlClient", "ContextProcessor"],
+        "location": "/lib"
+      },
+      {
+        "name": "UI Layer",
+        "description": "React components and pages",
+        "components": ["Chat", "SearchDisplay", "MarkdownRenderer"],
+        "location": "/app"
+      },
+      {
+        "name": "Utility Layer",
+        "description": "Helper functions and configurations",
+        "components": ["config", "error-handler", "rate-limit"],
+        "location": "/lib"
+      }
+    ]
+  },
+  "conventions": {
+    "naming": {
+      "files": {
+        "pattern": "kebab-case",
+        "examples": ["langgraph-search-engine.ts", "context-processor.ts"]
+      },
+      "components": {
+        "pattern": "PascalCase",
+        "examples": ["Chat", "SearchDisplay", "MarkdownRenderer"]
+      },
+      "functions": {
+        "pattern": "camelCase",
+        "examples": ["useIsMobile", "getFaviconUrl", "handleError"]
+      },
+      "constants": {
+        "pattern": "UPPER_SNAKE_CASE",
+        "examples": ["SEARCH_CONFIG", "UI_CONFIG", "MODEL_CONFIG"]
+      }
+    },
+    "fileStructure": {
+      "/app": "Next.js pages and page components",
+      "/components/ui": "Reusable UI components (shadcn/ui)",
+      "/lib": "Core business logic and utilities",
+      "/hooks": "Custom React hooks",
+      "/public": "Static assets and images"
+    },
+    "imports": {
+      "aliases": {
+        "@/": "Root directory alias",
+        "@/lib/": "Library modules",
+        "@/components/": "Component modules"
+      }
+    }
+  },
+  "componentRoles": {
+    "orchestrator": {
+      "description": "Main workflow orchestration using LangGraph",
+      "components": [
+        {
+          "name": "LangGraphSearchEngine",
+          "file": "lib/langgraph-search-engine.ts",
+          "type": "class",
+          "responsibilities": [
+            "Search workflow orchestration",
+            "State management",
+            "Node execution",
+            "Event streaming"
+          ]
+        }
+      ]
+    },
+    "services": {
+      "description": "External service integrations and processors",
+      "components": [
+        {
+          "name": "FirecrawlClient",
+          "file": "lib/firecrawl.ts",
+          "type": "class",
+          "responsibilities": ["Web scraping", "Site mapping", "Search API"]
+        },
+        {
+          "name": "ContextProcessor",
+          "file": "lib/context-processor.ts",
+          "type": "class",
+          "responsibilities": ["Content analysis", "Relevance scoring", "Summarization"]
+        }
+      ]
+    },
+    "ui": {
+      "description": "User interface components",
+      "categories": {
+        "pages": ["Home", "RootLayout"],
+        "features": ["Chat", "SearchDisplay", "Search"],
+        "display": ["MarkdownRenderer", "CitationTooltip", "SourcesList"],
+        "animation": ["AnimatedThinkingLine", "FoundSourcesGroup", "SourceProcessingLine"]
+      }
+    },
+    "state": {
+      "description": "State management and configuration",
+      "components": [
+        {
+          "name": "SearchStateAnnotation",
+          "type": "LangGraph Annotation",
+          "fields": ["query", "understanding", "sources", "finalAnswer", "phase"]
+        }
+      ]
+    },
+    "types": {
+      "description": "TypeScript type definitions",
+      "categories": {
+        "events": ["SearchPhase", "SearchEvent", "ErrorType"],
+        "models": ["Source", "SearchResult", "SearchStep", "ProcessedSource"],
+        "config": ["GraphConfig", "SearchState"]
+      }
+    }
+  },
+  "workflowPhases": [
+    {
+      "phase": "understanding",
+      "description": "Analyze user query and context"
+    },
+    {
+      "phase": "planning",
+      "description": "Extract sub-queries and plan search strategy"
+    },
+    {
+      "phase": "searching",
+      "description": "Execute web searches for information"
+    },
+    {
+      "phase": "scraping",
+      "description": "Scrape content from found sources"
+    },
+    {
+      "phase": "analyzing",
+      "description": "Process and score content relevance"
+    },
+    {
+      "phase": "synthesizing",
+      "description": "Generate comprehensive answer with citations"
+    }
+  ],
+  "dependencies": {
+    "core": [
+      "@langchain/langgraph",
+      "@langchain/openai",
+      "@mendable/firecrawl-js",
+      "ai"
+    ],
+    "ui": [
+      "react",
+      "next",
+      "@radix-ui/*",
+      "tailwindcss"
+    ],
+    "utilities": [
+      "@upstash/redis",
+      "clsx",
+      "tailwind-merge"
+    ]
+  },
+  "technicalDebt": [
+    {
+      "file": "lib/langgraph-search-engine.ts",
+      "issue": "File too large (49KB)",
+      "recommendation": "Break into smaller modules"
+    },
+    {
+      "file": "app/chat.tsx",
+      "issue": "Component too large (30KB)",
+      "recommendation": "Extract sub-components"
+    },
+    {
+      "file": "app/search-display.tsx",
+      "issue": "Component too large (37KB)",
+      "recommendation": "Modularize event rendering"
+    },
+    {
+      "issue": "State management",
+      "recommendation": "Consider centralized state management"
+    },
+    {
+      "issue": "No test coverage",
+      "recommendation": "Add unit and integration tests"
+    }
+  ]
+} 

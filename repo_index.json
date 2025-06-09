@@ -1,0 +1,243 @@
+{
+  "version": "1.0.0",
+  "projectName": "Firesearch",
+  "indexDate": "2024-12-30",
+  "totalFiles": 96,
+  "totalSymbols": 167,
+  "entries": [
+    {
+      "id": "langgraph-search-engine",
+      "path": "lib/langgraph-search-engine.ts",
+      "type": "orchestrator",
+      "category": "core",
+      "size": 49419,
+      "loc": 1358,
+      "description": "Central search orchestration engine using LangGraph state machine",
+      "tags": ["langgraph", "state-machine", "search", "orchestration"],
+      "symbols": {
+        "classes": ["LangGraphSearchEngine"],
+        "types": ["SearchPhase", "SearchEvent", "ErrorType", "SearchState", "GraphConfig"],
+        "interfaces": ["Source", "SearchResult", "SearchStep"],
+        "methods": ["search", "analyzeQuery", "extractSubQueries", "generateStreamingAnswer"]
+      },
+      "dependencies": ["@langchain/langgraph", "@langchain/openai", "./firecrawl", "./context-processor"]
+    },
+    {
+      "id": "firecrawl-client",
+      "path": "lib/firecrawl.ts",
+      "type": "service",
+      "category": "core",
+      "size": 5263,
+      "description": "Web scraping service integration for Firecrawl API",
+      "tags": ["scraping", "web", "api", "external-service"],
+      "symbols": {
+        "classes": ["FirecrawlClient"],
+        "methods": ["scrapeUrl", "mapUrl", "search"]
+      },
+      "dependencies": ["@mendable/firecrawl-js"]
+    },
+    {
+      "id": "context-processor",
+      "path": "lib/context-processor.ts",
+      "type": "service",
+      "category": "core",
+      "size": 13722,
+      "description": "Content analysis and summarization service",
+      "tags": ["nlp", "analysis", "summarization", "relevance"],
+      "symbols": {
+        "classes": ["ContextProcessor"],
+        "interfaces": ["ProcessedSource"],
+        "methods": ["processSources", "extractKeywords", "calculateRelevanceScore", "summarizeSource"]
+      },
+      "dependencies": ["@langchain/openai"]
+    },
+    {
+      "id": "chat-component",
+      "path": "app/chat.tsx",
+      "type": "ui-component",
+      "category": "feature",
+      "size": 30740,
+      "description": "Main chat interface component managing search interactions",
+      "tags": ["react", "ui", "chat", "search-interface"],
+      "symbols": {
+        "functions": ["Chat", "SourcesList"]
+      },
+      "dependencies": ["react", "./search-display", "@/lib/langgraph-search-engine"]
+    },
+    {
+      "id": "search-display",
+      "path": "app/search-display.tsx",
+      "type": "ui-component",
+      "category": "feature",
+      "size": 37002,
+      "description": "Search visualization and event display component",
+      "tags": ["react", "ui", "visualization", "animation"],
+      "symbols": {
+        "functions": ["SearchDisplay", "AnimatedThinkingLine", "FoundSourcesGroup", "SourceProcessingLine", "renderEvent"]
+      },
+      "dependencies": ["react", "@/lib/langgraph-search-engine"]
+    },
+    {
+      "id": "markdown-renderer",
+      "path": "app/markdown-renderer.tsx",
+      "type": "ui-component",
+      "category": "display",
+      "size": 4401,
+      "description": "Renders markdown content with citation support",
+      "tags": ["react", "markdown", "citations", "rendering"],
+      "symbols": {
+        "interfaces": ["MarkdownRendererProps"]
+      },
+      "dependencies": ["react", "remark", "rehype"]
+    },
+    {
+      "id": "citation-tooltip",
+      "path": "app/citation-tooltip.tsx",
+      "type": "ui-component",
+      "category": "display",
+      "size": 3595,
+      "description": "Displays source information in interactive tooltips",
+      "tags": ["react", "ui", "tooltip", "citations"],
+      "symbols": {
+        "functions": ["CitationTooltip"],
+        "interfaces": ["CitationTooltipProps"]
+      },
+      "dependencies": ["@radix-ui/react-tooltip", "@/lib/langgraph-search-engine"]
+    },
+    {
+      "id": "page-component",
+      "path": "app/page.tsx",
+      "type": "page",
+      "category": "routing",
+      "size": 4733,
+      "description": "Home page component with branding and chat integration",
+      "tags": ["nextjs", "page", "home", "layout"],
+      "symbols": {
+        "functions": ["Home"]
+      },
+      "dependencies": ["./chat", "next/image"]
+    },
+    {
+      "id": "layout-component",
+      "path": "app/layout.tsx",
+      "type": "layout",
+      "category": "routing",
+      "size": 751,
+      "description": "Root layout wrapper for the application",
+      "tags": ["nextjs", "layout", "root"],
+      "symbols": {
+        "functions": ["RootLayout"]
+      },
+      "dependencies": ["./globals.css"]
+    },
+    {
+      "id": "search-config",
+      "path": "lib/config.ts",
+      "type": "configuration",
+      "category": "config",
+      "size": 1975,
+      "description": "Central configuration for search engine settings",
+      "tags": ["config", "constants", "settings"],
+      "symbols": {
+        "constants": ["SEARCH_CONFIG", "UI_CONFIG", "MODEL_CONFIG"]
+      }
+    },
+    {
+      "id": "error-handler",
+      "path": "lib/error-handler.ts",
+      "type": "utility",
+      "category": "utils",
+      "size": 3565,
+      "description": "Error handling utilities for different error types",
+      "tags": ["error", "utility", "handling"],
+      "symbols": {
+        "enums": ["ErrorType"],
+        "functions": ["handleError", "handleNextError", "handleEdgeError"]
+      }
+    },
+    {
+      "id": "rate-limiter",
+      "path": "lib/rate-limit.ts",
+      "type": "utility",
+      "category": "utils",
+      "size": 1837,
+      "description": "Rate limiting implementation using Upstash Redis",
+      "tags": ["rate-limit", "redis", "api", "security"],
+      "dependencies": ["@upstash/redis", "@upstash/ratelimit"]
+    },
+    {
+      "id": "favicon-utils",
+      "path": "lib/favicon-utils.ts",
+      "type": "utility",
+      "category": "utils",
+      "size": 964,
+      "description": "Favicon URL generation and fallback handling",
+      "tags": ["favicon", "utility", "url"],
+      "symbols": {
+        "functions": ["getFaviconUrl", "getDefaultFavicon", "markFaviconFailed"]
+      }
+    },
+    {
+      "id": "mobile-hook",
+      "path": "hooks/use-mobile.ts",
+      "type": "hook",
+      "category": "hooks",
+      "size": 565,
+      "description": "React hook for mobile device detection",
+      "tags": ["react", "hook", "mobile", "responsive"],
+      "symbols": {
+        "functions": ["useIsMobile"]
+      }
+    }
+  ],
+  "categories": {
+    "core": {
+      "description": "Core business logic and orchestration",
+      "count": 3,
+      "files": ["lib/langgraph-search-engine.ts", "lib/firecrawl.ts", "lib/context-processor.ts"]
+    },
+    "feature": {
+      "description": "Major feature components",
+      "count": 2,
+      "files": ["app/chat.tsx", "app/search-display.tsx"]
+    },
+    "display": {
+      "description": "Display and rendering components",
+      "count": 2,
+      "files": ["app/markdown-renderer.tsx", "app/citation-tooltip.tsx"]
+    },
+    "routing": {
+      "description": "Next.js pages and layouts",
+      "count": 2,
+      "files": ["app/page.tsx", "app/layout.tsx"]
+    },
+    "config": {
+      "description": "Configuration files",
+      "count": 1,
+      "files": ["lib/config.ts"]
+    },
+    "utils": {
+      "description": "Utility functions and helpers",
+      "count": 3,
+      "files": ["lib/error-handler.ts", "lib/rate-limit.ts", "lib/favicon-utils.ts"]
+    },
+    "hooks": {
+      "description": "React hooks",
+      "count": 1,
+      "files": ["hooks/use-mobile.ts"]
+    }
+  },
+  "searchMetrics": {
+    "totalSearchableItems": 14,
+    "indexCoverage": "87%",
+    "missingFromIndex": ["components/ui/*", "api/check-env/route.ts", "scripts/*"],
+    "symbolTypes": {
+      "classes": 3,
+      "functions": 32,
+      "interfaces": 6,
+      "types": 8,
+      "enums": 1,
+      "constants": 3
+    }
+  }
+} 

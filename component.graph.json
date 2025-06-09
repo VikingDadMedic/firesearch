@@ -1,0 +1,234 @@
+{
+  "version": "1.0.0",
+  "projectName": "Firesearch",
+  "graphType": "Component Dependency Graph",
+  "nodes": [
+    {
+      "id": "langgraph-search-engine",
+      "label": "LangGraphSearchEngine",
+      "type": "orchestrator",
+      "group": "core",
+      "size": 49419,
+      "complexity": "high"
+    },
+    {
+      "id": "firecrawl-client",
+      "label": "FirecrawlClient",
+      "type": "service",
+      "group": "core",
+      "size": 5263,
+      "complexity": "medium"
+    },
+    {
+      "id": "context-processor",
+      "label": "ContextProcessor",
+      "type": "service",
+      "group": "core",
+      "size": 13722,
+      "complexity": "medium"
+    },
+    {
+      "id": "chat",
+      "label": "Chat",
+      "type": "ui-component",
+      "group": "ui",
+      "size": 30740,
+      "complexity": "high"
+    },
+    {
+      "id": "search-display",
+      "label": "SearchDisplay",
+      "type": "ui-component",
+      "group": "ui",
+      "size": 37002,
+      "complexity": "high"
+    },
+    {
+      "id": "markdown-renderer",
+      "label": "MarkdownRenderer",
+      "type": "ui-component",
+      "group": "ui",
+      "size": 4401,
+      "complexity": "low"
+    },
+    {
+      "id": "citation-tooltip",
+      "label": "CitationTooltip",
+      "type": "ui-component",
+      "group": "ui",
+      "size": 3595,
+      "complexity": "low"
+    },
+    {
+      "id": "home-page",
+      "label": "Home",
+      "type": "page",
+      "group": "pages",
+      "size": 4733,
+      "complexity": "low"
+    },
+    {
+      "id": "search-state",
+      "label": "SearchStateAnnotation",
+      "type": "state",
+      "group": "state",
+      "complexity": "medium"
+    },
+    {
+      "id": "search-event",
+      "label": "SearchEvent",
+      "type": "type",
+      "group": "types",
+      "complexity": "low"
+    },
+    {
+      "id": "source-type",
+      "label": "Source",
+      "type": "type",
+      "group": "types",
+      "complexity": "low"
+    },
+    {
+      "id": "config",
+      "label": "Config",
+      "type": "configuration",
+      "group": "utils",
+      "size": 1975,
+      "complexity": "low"
+    },
+    {
+      "id": "error-handler",
+      "label": "ErrorHandler",
+      "type": "utility",
+      "group": "utils",
+      "size": 3565,
+      "complexity": "low"
+    }
+  ],
+  "edges": [
+    {
+      "source": "langgraph-search-engine",
+      "target": "firecrawl-client",
+      "type": "uses",
+      "weight": 3
+    },
+    {
+      "source": "langgraph-search-engine",
+      "target": "context-processor",
+      "type": "uses",
+      "weight": 3
+    },
+    {
+      "source": "langgraph-search-engine",
+      "target": "search-state",
+      "type": "implements",
+      "weight": 5
+    },
+    {
+      "source": "langgraph-search-engine",
+      "target": "config",
+      "type": "uses",
+      "weight": 2
+    },
+    {
+      "source": "chat",
+      "target": "langgraph-search-engine",
+      "type": "invokes",
+      "weight": 5
+    },
+    {
+      "source": "chat",
+      "target": "search-display",
+      "type": "renders",
+      "weight": 4
+    },
+    {
+      "source": "chat",
+      "target": "search-event",
+      "type": "consumes",
+      "weight": 3
+    },
+    {
+      "source": "chat",
+      "target": "source-type",
+      "type": "uses",
+      "weight": 2
+    },
+    {
+      "source": "search-display",
+      "target": "search-event",
+      "type": "consumes",
+      "weight": 4
+    },
+    {
+      "source": "markdown-renderer",
+      "target": "citation-tooltip",
+      "type": "integrates",
+      "weight": 3
+    },
+    {
+      "source": "citation-tooltip",
+      "target": "source-type",
+      "type": "uses",
+      "weight": 2
+    },
+    {
+      "source": "home-page",
+      "target": "chat",
+      "type": "renders",
+      "weight": 5
+    },
+    {
+      "source": "context-processor",
+      "target": "source-type",
+      "type": "processes",
+      "weight": 3
+    }
+  ],
+  "groups": {
+    "core": {
+      "label": "Core Engine",
+      "color": "#FF6B6B",
+      "description": "Orchestration and service components"
+    },
+    "ui": {
+      "label": "UI Components",
+      "color": "#4ECDC4",
+      "description": "React components for user interface"
+    },
+    "pages": {
+      "label": "Pages",
+      "color": "#45B7D1",
+      "description": "Next.js page components"
+    },
+    "state": {
+      "label": "State Management",
+      "color": "#96CEB4",
+      "description": "State definitions and annotations"
+    },
+    "types": {
+      "label": "Type Definitions",
+      "color": "#FECA57",
+      "description": "TypeScript types and interfaces"
+    },
+    "utils": {
+      "label": "Utilities",
+      "color": "#DDA0DD",
+      "description": "Helper functions and configurations"
+    }
+  },
+  "visualization": {
+    "layout": "force-directed",
+    "nodeSize": "size",
+    "edgeThickness": "weight",
+    "clustering": "group",
+    "description": "Force-directed graph showing component dependencies. Node size represents file size, edge thickness represents dependency strength."
+  },
+  "statistics": {
+    "totalNodes": 13,
+    "totalEdges": 13,
+    "avgDependencies": 2,
+    "mostConnected": "langgraph-search-engine",
+    "clusters": 6
+  }
+} 

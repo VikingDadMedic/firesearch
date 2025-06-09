@@ -1,0 +1,276 @@
+{
+  "version": "1.0.0",
+  "projectName": "Firesearch",
+  "entities": {
+    "core": [
+      {
+        "id": "langgraph-search-engine",
+        "name": "LangGraphSearchEngine",
+        "type": "orchestrator",
+        "file": "lib/langgraph-search-engine.ts",
+        "description": "Central search orchestration engine using LangGraph state machine",
+        "attributes": {
+          "size": "49KB",
+          "complexity": "high",
+          "technicalDebt": "needs refactoring"
+        },
+        "methods": [
+          "search", "analyzeQuery", "extractSubQueries", "generateStreamingAnswer",
+          "checkAnswersInSources", "generateFollowUpQuestions", "buildGraph"
+        ]
+      },
+      {
+        "id": "firecrawl-client",
+        "name": "FirecrawlClient",
+        "type": "service",
+        "file": "lib/firecrawl.ts",
+        "description": "Web scraping service integration",
+        "attributes": {
+          "external": true,
+          "api": "Firecrawl"
+        },
+        "methods": ["scrapeUrl", "mapUrl", "search"]
+      },
+      {
+        "id": "context-processor",
+        "name": "ContextProcessor",
+        "type": "service",
+        "file": "lib/context-processor.ts",
+        "description": "Content analysis and summarization service",
+        "attributes": {
+          "internal": true
+        },
+        "methods": [
+          "processSources", "extractKeywords", "calculateRelevanceScore",
+          "summarizeSource", "distributeCharacterBudget"
+        ]
+      }
+    ],
+    "ui": [
+      {
+        "id": "chat-component",
+        "name": "Chat",
+        "type": "feature-component",
+        "file": "app/chat.tsx",
+        "description": "Main chat interface component",
+        "attributes": {
+          "size": "30KB",
+          "complexity": "high",
+          "technicalDebt": "needs extraction"
+        }
+      },
+      {
+        "id": "search-display",
+        "name": "SearchDisplay",
+        "type": "feature-component",
+        "file": "app/search-display.tsx",
+        "description": "Search visualization and event display",
+        "attributes": {
+          "size": "37KB",
+          "complexity": "high",
+          "technicalDebt": "needs modularization"
+        }
+      },
+      {
+        "id": "markdown-renderer",
+        "name": "MarkdownRenderer",
+        "type": "display-component",
+        "file": "app/markdown-renderer.tsx",
+        "description": "Renders markdown with citation support"
+      },
+      {
+        "id": "citation-tooltip",
+        "name": "CitationTooltip",
+        "type": "display-component",
+        "file": "app/citation-tooltip.tsx",
+        "description": "Displays source information in tooltips"
+      }
+    ],
+    "state": [
+      {
+        "id": "search-state",
+        "name": "SearchStateAnnotation",
+        "type": "state-definition",
+        "description": "LangGraph state annotation with reducers",
+        "fields": [
+          "query", "understanding", "searchQueries", "sources",
+          "scrapedSources", "processedSources", "finalAnswer", "phase"
+        ]
+      },
+      {
+        "id": "search-config",
+        "name": "SEARCH_CONFIG",
+        "type": "configuration",
+        "file": "lib/config.ts",
+        "description": "Search engine configuration constants"
+      }
+    ],
+    "types": [
+      {
+        "id": "search-event",
+        "name": "SearchEvent",
+        "type": "event-type",
+        "description": "Union type for all search events",
+        "variants": [
+          "phase-update", "thinking", "searching", "found",
+          "scraping", "content-chunk", "final-result", "error"
+        ]
+      },
+      {
+        "id": "source-type",
+        "name": "Source",
+        "type": "data-model",
+        "description": "Web source data structure",
+        "fields": ["url", "title", "content", "quality", "summary"]
+      }
+    ],
+    "workflow": [
+      {
+        "id": "understand-node",
+        "name": "understand",
+        "type": "workflow-node",
+        "description": "Analyzes user query and context"
+      },
+      {
+        "id": "plan-node",
+        "name": "plan",
+        "type": "workflow-node",
+        "description": "Extracts sub-queries and plans search"
+      },
+      {
+        "id": "search-node",
+        "name": "search",
+        "type": "workflow-node",
+        "description": "Executes web searches"
+      },
+      {
+        "id": "analyze-node",
+        "name": "analyze",
+        "type": "workflow-node",
+        "description": "Processes and scores content"
+      },
+      {
+        "id": "synthesize-node",
+        "name": "synthesize",
+        "type": "workflow-node",
+        "description": "Generates final answer"
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "from": "langgraph-search-engine",
+      "to": "firecrawl-client",
+      "type": "uses",
+      "description": "Uses for web scraping and search"
+    },
+    {
+      "from": "langgraph-search-engine",
+      "to": "context-processor",
+      "type": "uses",
+      "description": "Uses for content analysis"
+    },
+    {
+      "from": "langgraph-search-engine",
+      "to": "search-state",
+      "type": "implements",
+      "description": "Implements state management"
+    },
+    {
+      "from": "chat-component",
+      "to": "langgraph-search-engine",
+      "type": "invokes",
+      "description": "Invokes search engine"
+    },
+    {
+      "from": "chat-component",
+      "to": "search-display",
+      "type": "renders",
+      "description": "Renders search display"
+    },
+    {
+      "from": "search-display",
+      "to": "search-event",
+      "type": "consumes",
+      "description": "Consumes search events"
+    },
+    {
+      "from": "markdown-renderer",
+      "to": "citation-tooltip",
+      "type": "integrates",
+      "description": "Integrates citation tooltips"
+    },
+    {
+      "from": "context-processor",
+      "to": "source-type",
+      "type": "processes",
+      "description": "Processes source data"
+    },
+    {
+      "from": "understand-node",
+      "to": "plan-node",
+      "type": "flows-to",
+      "description": "Workflow progression"
+    },
+    {
+      "from": "plan-node",
+      "to": "search-node",
+      "type": "flows-to",
+      "description": "Workflow progression"
+    },
+    {
+      "from": "search-node",
+      "to": "analyze-node",
+      "type": "flows-to",
+      "description": "Workflow progression"
+    },
+    {
+      "from": "analyze-node",
+      "to": "synthesize-node",
+      "type": "flows-to",
+      "description": "Workflow progression"
+    },
+    {
+      "from": "langgraph-search-engine",
+      "to": "understand-node",
+      "type": "orchestrates",
+      "description": "Orchestrates workflow node"
+    },
+    {
+      "from": "langgraph-search-engine",
+      "to": "plan-node",
+      "type": "orchestrates",
+      "description": "Orchestrates workflow node"
+    },
+    {
+      "from": "langgraph-search-engine",
+      "to": "search-node",
+      "type": "orchestrates",
+      "description": "Orchestrates workflow node"
+    },
+    {
+      "from": "langgraph-search-engine",
+      "to": "analyze-node",
+      "type": "orchestrates",
+      "description": "Orchestrates workflow node"
+    },
+    {
+      "from": "langgraph-search-engine",
+      "to": "synthesize-node",
+      "type": "orchestrates",
+      "description": "Orchestrates workflow node"
+    }
+  ],
+  "memoryNotes": [
+    {
+      "id": "memory-1",
+      "reference": "6988930818301892112",
+      "content": "Firesearch is an AI-powered search application built with Next.js 15, React 19, TypeScript, and LangGraph"
+    },
+    {
+      "id": "memory-2",
+      "reference": "2757139130182453925",
+      "content": "LangGraphSearchEngine implements a LangGraph state machine with multiple nodes for search workflow"
+    }
+  ]
+} 

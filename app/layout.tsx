@@ -9,8 +9,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Firecrawl",
-  description: "A Firecrawl template",
+  title: "Toby 2.0",
+  description: "Agentic Travel Research",
 };
 
 export default function RootLayout({

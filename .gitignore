@@ -1,5 +1,7 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
+/kit-analysis
+./kit-analysis
+kit-analysis
 # dependencies
 /node_modules
 /.pnp
@@ -9,6 +11,12 @@
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
+
+# pnpm
+pnpm-lock.yaml
+
+#python
+venv/
 
 # testing
 /coverage
@@ -39,3 +47,4 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+.aider*

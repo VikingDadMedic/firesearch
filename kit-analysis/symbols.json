@@ -1,0 +1,1066 @@
+[
+  {
+    "name": "MarkdownRendererProps",
+    "type": "interface",
+    "start_line": 4,
+    "end_line": 4,
+    "code": "MarkdownRendererProps",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/app/markdown-renderer.tsx"
+  },
+  {
+    "name": "AnimatedThinkingLine",
+    "type": "function",
+    "start_line": 9,
+    "end_line": 9,
+    "code": "AnimatedThinkingLine",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/app/search-display.tsx"
+  },
+  {
+    "name": "FoundSourcesGroup",
+    "type": "function",
+    "start_line": 80,
+    "end_line": 80,
+    "code": "FoundSourcesGroup",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/app/search-display.tsx"
+  },
+  {
+    "name": "SourceProcessingLine",
+    "type": "function",
+    "start_line": 159,
+    "end_line": 159,
+    "code": "SourceProcessingLine",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/app/search-display.tsx"
+  },
+  {
+    "name": "SearchDisplay",
+    "type": "function",
+    "start_line": 221,
+    "end_line": 221,
+    "code": "SearchDisplay",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/app/search-display.tsx"
+  },
+  {
+    "name": "renderEvent",
+    "type": "function",
+    "start_line": 692,
+    "end_line": 692,
+    "code": "renderEvent",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/app/search-display.tsx"
+  },
+  {
+    "name": "search",
+    "type": "function",
+    "start_line": 6,
+    "end_line": 6,
+    "code": "search",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/app/search.tsx"
+  },
+  {
+    "name": "RootLayout",
+    "type": "function",
+    "start_line": 15,
+    "end_line": 15,
+    "code": "RootLayout",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/app/layout.tsx"
+  },
+  {
+    "name": "SourcesList",
+    "type": "function",
+    "start_line": 30,
+    "end_line": 30,
+    "code": "SourcesList",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/app/chat.tsx"
+  },
+  {
+    "name": "Chat",
+    "type": "function",
+    "start_line": 184,
+    "end_line": 184,
+    "code": "Chat",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/app/chat.tsx"
+  },
+  {
+    "name": "Home",
+    "type": "function",
+    "start_line": 3,
+    "end_line": 3,
+    "code": "Home",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/app/page.tsx"
+  },
+  {
+    "name": "CitationTooltipProps",
+    "type": "interface",
+    "start_line": 7,
+    "end_line": 7,
+    "code": "CitationTooltipProps",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/app/citation-tooltip.tsx"
+  },
+  {
+    "name": "CitationTooltip",
+    "type": "function",
+    "start_line": 11,
+    "end_line": 11,
+    "code": "CitationTooltip",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/app/citation-tooltip.tsx"
+  },
+  {
+    "name": "useIsMobile",
+    "type": "function",
+    "start_line": 4,
+    "end_line": 4,
+    "code": "useIsMobile",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/hooks/use-mobile.ts"
+  },
+  {
+    "name": "FirecrawlClient",
+    "type": "class",
+    "start_line": 3,
+    "end_line": 3,
+    "code": "FirecrawlClient",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/firecrawl.ts"
+  },
+  {
+    "name": "FirecrawlClient",
+    "type": "class",
+    "start_line": 3,
+    "end_line": 3,
+    "code": "FirecrawlClient",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/firecrawl.ts"
+  },
+  {
+    "name": "constructor",
+    "type": "method",
+    "start_line": 6,
+    "end_line": 6,
+    "code": "constructor",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/firecrawl.ts"
+  },
+  {
+    "name": "scrapeUrl",
+    "type": "method",
+    "start_line": 14,
+    "end_line": 14,
+    "code": "scrapeUrl",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/firecrawl.ts"
+  },
+  {
+    "name": "mapUrl",
+    "type": "method",
+    "start_line": 82,
+    "end_line": 82,
+    "code": "mapUrl",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/firecrawl.ts"
+  },
+  {
+    "name": "search",
+    "type": "method",
+    "start_line": 102,
+    "end_line": 102,
+    "code": "search",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/firecrawl.ts"
+  },
+  {
+    "name": "ProcessedSource",
+    "type": "interface",
+    "start_line": 4,
+    "end_line": 4,
+    "code": "ProcessedSource",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/context-processor.ts"
+  },
+  {
+    "name": "ContextProcessor",
+    "type": "class",
+    "start_line": 11,
+    "end_line": 11,
+    "code": "ContextProcessor",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/context-processor.ts"
+  },
+  {
+    "name": "ContextProcessor",
+    "type": "class",
+    "start_line": 11,
+    "end_line": 11,
+    "code": "ContextProcessor",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/context-processor.ts"
+  },
+  {
+    "name": "processSources",
+    "type": "method",
+    "start_line": 21,
+    "end_line": 21,
+    "code": "processSources",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/context-processor.ts"
+  },
+  {
+    "name": "extractKeywords",
+    "type": "method",
+    "start_line": 46,
+    "end_line": 46,
+    "code": "extractKeywords",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/context-processor.ts"
+  },
+  {
+    "name": "processSource",
+    "type": "method",
+    "start_line": 66,
+    "end_line": 66,
+    "code": "processSource",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/context-processor.ts"
+  },
+  {
+    "name": "calculateRelevanceScore",
+    "type": "method",
+    "start_line": 120,
+    "end_line": 120,
+    "code": "calculateRelevanceScore",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/context-processor.ts"
+  },
+  {
+    "name": "extractRelevantSections",
+    "type": "method",
+    "start_line": 142,
+    "end_line": 142,
+    "code": "extractRelevantSections",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/context-processor.ts"
+  },
+  {
+    "name": "distributeCharacterBudget",
+    "type": "method",
+    "start_line": 206,
+    "end_line": 206,
+    "code": "distributeCharacterBudget",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/context-processor.ts"
+  },
+  {
+    "name": "calculateSummaryLength",
+    "type": "method",
+    "start_line": 276,
+    "end_line": 276,
+    "code": "calculateSummaryLength",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/context-processor.ts"
+  },
+  {
+    "name": "summarizeSource",
+    "type": "method",
+    "start_line": 287,
+    "end_line": 287,
+    "code": "summarizeSource",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/context-processor.ts"
+  },
+  {
+    "name": "calculateRelevanceFromSummary",
+    "type": "method",
+    "start_line": 365,
+    "end_line": 365,
+    "code": "calculateRelevanceFromSummary",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/context-processor.ts"
+  },
+  {
+    "name": "ErrorType",
+    "type": "enum",
+    "start_line": 4,
+    "end_line": 4,
+    "code": "ErrorType",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/error-handler.ts"
+  },
+  {
+    "name": "ErrorType",
+    "type": "enum",
+    "start_line": 4,
+    "end_line": 4,
+    "code": "ErrorType",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/error-handler.ts"
+  },
+  {
+    "name": "handleError",
+    "type": "function",
+    "start_line": 37,
+    "end_line": 37,
+    "code": "handleError",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/error-handler.ts"
+  },
+  {
+    "name": "handleNextError",
+    "type": "function",
+    "start_line": 84,
+    "end_line": 84,
+    "code": "handleNextError",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/error-handler.ts"
+  },
+  {
+    "name": "handleEdgeError",
+    "type": "function",
+    "start_line": 95,
+    "end_line": 95,
+    "code": "handleEdgeError",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/error-handler.ts"
+  },
+  {
+    "name": "getFaviconUrl",
+    "type": "function",
+    "start_line": 3,
+    "end_line": 3,
+    "code": "getFaviconUrl",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/favicon-utils.ts"
+  },
+  {
+    "name": "getDefaultFavicon",
+    "type": "function",
+    "start_line": 18,
+    "end_line": 18,
+    "code": "getDefaultFavicon",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/favicon-utils.ts"
+  },
+  {
+    "name": "markFaviconFailed",
+    "type": "function",
+    "start_line": 22,
+    "end_line": 22,
+    "code": "markFaviconFailed",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/favicon-utils.ts"
+  },
+  {
+    "name": "cn",
+    "type": "function",
+    "start_line": 3,
+    "end_line": 3,
+    "code": "cn",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/utils.ts"
+  },
+  {
+    "name": "SearchPhase",
+    "type": "type",
+    "start_line": 8,
+    "end_line": 8,
+    "code": "SearchPhase",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/langgraph-search-engine.ts"
+  },
+  {
+    "name": "SearchPhase",
+    "type": "type",
+    "start_line": 8,
+    "end_line": 8,
+    "code": "SearchPhase",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/langgraph-search-engine.ts"
+  },
+  {
+    "name": "SearchEvent",
+    "type": "type",
+    "start_line": 17,
+    "end_line": 17,
+    "code": "SearchEvent",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/langgraph-search-engine.ts"
+  },
+  {
+    "name": "SearchEvent",
+    "type": "type",
+    "start_line": 17,
+    "end_line": 17,
+    "code": "SearchEvent",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/langgraph-search-engine.ts"
+  },
+  {
+    "name": "ErrorType",
+    "type": "type",
+    "start_line": 29,
+    "end_line": 29,
+    "code": "ErrorType",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/langgraph-search-engine.ts"
+  },
+  {
+    "name": "ErrorType",
+    "type": "type",
+    "start_line": 29,
+    "end_line": 29,
+    "code": "ErrorType",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/langgraph-search-engine.ts"
+  },
+  {
+    "name": "Source",
+    "type": "interface",
+    "start_line": 31,
+    "end_line": 31,
+    "code": "Source",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/langgraph-search-engine.ts"
+  },
+  {
+    "name": "Source",
+    "type": "interface",
+    "start_line": 31,
+    "end_line": 31,
+    "code": "Source",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/langgraph-search-engine.ts"
+  },
+  {
+    "name": "SearchResult",
+    "type": "interface",
+    "start_line": 39,
+    "end_line": 39,
+    "code": "SearchResult",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/langgraph-search-engine.ts"
+  },
+  {
+    "name": "SearchResult",
+    "type": "interface",
+    "start_line": 39,
+    "end_line": 39,
+    "code": "SearchResult",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/langgraph-search-engine.ts"
+  },
+  {
+    "name": "SearchStep",
+    "type": "interface",
+    "start_line": 46,
+    "end_line": 46,
+    "code": "SearchStep",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/langgraph-search-engine.ts"
+  },
+  {
+    "name": "SearchStep",
+    "type": "interface",
+    "start_line": 46,
+    "end_line": 46,
+    "code": "SearchStep",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/langgraph-search-engine.ts"
+  },
+  {
+    "name": "SearchState",
+    "type": "type",
+    "start_line": 152,
+    "end_line": 152,
+    "code": "SearchState",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/langgraph-search-engine.ts"
+  },
+  {
+    "name": "GraphConfig",
+    "type": "interface",
+    "start_line": 155,
+    "end_line": 155,
+    "code": "GraphConfig",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/langgraph-search-engine.ts"
+  },
+  {
+    "name": "LangGraphSearchEngine",
+    "type": "class",
+    "start_line": 162,
+    "end_line": 162,
+    "code": "LangGraphSearchEngine",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/langgraph-search-engine.ts"
+  },
+  {
+    "name": "LangGraphSearchEngine",
+    "type": "class",
+    "start_line": 162,
+    "end_line": 162,
+    "code": "LangGraphSearchEngine",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/langgraph-search-engine.ts"
+  },
+  {
+    "name": "constructor",
+    "type": "method",
+    "start_line": 170,
+    "end_line": 170,
+    "code": "constructor",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/langgraph-search-engine.ts"
+  },
+  {
+    "name": "getInitialSteps",
+    "type": "method",
+    "start_line": 201,
+    "end_line": 201,
+    "code": "getInitialSteps",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/langgraph-search-engine.ts"
+  },
+  {
+    "name": "buildGraph",
+    "type": "method",
+    "start_line": 212,
+    "end_line": 212,
+    "code": "buildGraph",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/langgraph-search-engine.ts"
+  },
+  {
+    "name": "search",
+    "type": "method",
+    "start_line": 887,
+    "end_line": 887,
+    "code": "search",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/langgraph-search-engine.ts"
+  },
+  {
+    "name": "getCurrentDateContext",
+    "type": "method",
+    "start_line": 938,
+    "end_line": 938,
+    "code": "getCurrentDateContext",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/langgraph-search-engine.ts"
+  },
+  {
+    "name": "analyzeQuery",
+    "type": "method",
+    "start_line": 953,
+    "end_line": 953,
+    "code": "analyzeQuery",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/langgraph-search-engine.ts"
+  },
+  {
+    "name": "checkAnswersInSources",
+    "type": "method",
+    "start_line": 982,
+    "end_line": 982,
+    "code": "checkAnswersInSources",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/langgraph-search-engine.ts"
+  },
+  {
+    "name": "extractSubQueries",
+    "type": "method",
+    "start_line": 1086,
+    "end_line": 1086,
+    "code": "extractSubQueries",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/langgraph-search-engine.ts"
+  },
+  {
+    "name": "generateAlternativeSearchQueries",
+    "type": "method",
+    "start_line": 1143,
+    "end_line": 1143,
+    "code": "generateAlternativeSearchQueries",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/langgraph-search-engine.ts"
+  },
+  {
+    "name": "scoreContent",
+    "type": "method",
+    "start_line": 1215,
+    "end_line": 1215,
+    "code": "scoreContent",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/langgraph-search-engine.ts"
+  },
+  {
+    "name": "summarizeContent",
+    "type": "method",
+    "start_line": 1227,
+    "end_line": 1227,
+    "code": "summarizeContent",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/langgraph-search-engine.ts"
+  },
+  {
+    "name": "generateStreamingAnswer",
+    "type": "method",
+    "start_line": 1254,
+    "end_line": 1254,
+    "code": "generateStreamingAnswer",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/langgraph-search-engine.ts"
+  },
+  {
+    "name": "generateFollowUpQuestions",
+    "type": "method",
+    "start_line": 1304,
+    "end_line": 1304,
+    "code": "generateFollowUpQuestions",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/lib/langgraph-search-engine.ts"
+  },
+  {
+    "name": "GET",
+    "type": "function",
+    "start_line": 2,
+    "end_line": 2,
+    "code": "GET",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/app/api/check-env/route.ts"
+  },
+  {
+    "name": "Pagination",
+    "type": "function",
+    "start_line": 10,
+    "end_line": 10,
+    "code": "Pagination",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/pagination.tsx"
+  },
+  {
+    "name": "PaginationContent",
+    "type": "function",
+    "start_line": 22,
+    "end_line": 22,
+    "code": "PaginationContent",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/pagination.tsx"
+  },
+  {
+    "name": "PaginationItem",
+    "type": "function",
+    "start_line": 35,
+    "end_line": 35,
+    "code": "PaginationItem",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/pagination.tsx"
+  },
+  {
+    "name": "PaginationLinkProps",
+    "type": "type",
+    "start_line": 39,
+    "end_line": 39,
+    "code": "PaginationLinkProps",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/pagination.tsx"
+  },
+  {
+    "name": "PaginationLink",
+    "type": "function",
+    "start_line": 44,
+    "end_line": 44,
+    "code": "PaginationLink",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/pagination.tsx"
+  },
+  {
+    "name": "PaginationPrevious",
+    "type": "function",
+    "start_line": 67,
+    "end_line": 67,
+    "code": "PaginationPrevious",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/pagination.tsx"
+  },
+  {
+    "name": "PaginationNext",
+    "type": "function",
+    "start_line": 84,
+    "end_line": 84,
+    "code": "PaginationNext",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/pagination.tsx"
+  },
+  {
+    "name": "PaginationEllipsis",
+    "type": "function",
+    "start_line": 101,
+    "end_line": 101,
+    "code": "PaginationEllipsis",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/pagination.tsx"
+  },
+  {
+    "name": "Sheet",
+    "type": "function",
+    "start_line": 8,
+    "end_line": 8,
+    "code": "Sheet",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/sheet.tsx"
+  },
+  {
+    "name": "SheetTrigger",
+    "type": "function",
+    "start_line": 12,
+    "end_line": 12,
+    "code": "SheetTrigger",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/sheet.tsx"
+  },
+  {
+    "name": "SheetClose",
+    "type": "function",
+    "start_line": 18,
+    "end_line": 18,
+    "code": "SheetClose",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/sheet.tsx"
+  },
+  {
+    "name": "SheetPortal",
+    "type": "function",
+    "start_line": 24,
+    "end_line": 24,
+    "code": "SheetPortal",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/sheet.tsx"
+  },
+  {
+    "name": "SheetOverlay",
+    "type": "function",
+    "start_line": 30,
+    "end_line": 30,
+    "code": "SheetOverlay",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/sheet.tsx"
+  },
+  {
+    "name": "SheetContent",
+    "type": "function",
+    "start_line": 46,
+    "end_line": 46,
+    "code": "SheetContent",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/sheet.tsx"
+  },
+  {
+    "name": "SheetHeader",
+    "type": "function",
+    "start_line": 83,
+    "end_line": 83,
+    "code": "SheetHeader",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/sheet.tsx"
+  },
+  {
+    "name": "SheetFooter",
+    "type": "function",
+    "start_line": 93,
+    "end_line": 93,
+    "code": "SheetFooter",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/sheet.tsx"
+  },
+  {
+    "name": "SheetTitle",
+    "type": "function",
+    "start_line": 103,
+    "end_line": 103,
+    "code": "SheetTitle",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/sheet.tsx"
+  },
+  {
+    "name": "SheetDescription",
+    "type": "function",
+    "start_line": 116,
+    "end_line": 116,
+    "code": "SheetDescription",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/sheet.tsx"
+  },
+  {
+    "name": "TooltipProvider",
+    "type": "function",
+    "start_line": 7,
+    "end_line": 7,
+    "code": "TooltipProvider",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/tooltip.tsx"
+  },
+  {
+    "name": "Tooltip",
+    "type": "function",
+    "start_line": 20,
+    "end_line": 20,
+    "code": "Tooltip",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/tooltip.tsx"
+  },
+  {
+    "name": "TooltipTrigger",
+    "type": "function",
+    "start_line": 30,
+    "end_line": 30,
+    "code": "TooltipTrigger",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/tooltip.tsx"
+  },
+  {
+    "name": "TooltipContent",
+    "type": "function",
+    "start_line": 36,
+    "end_line": 36,
+    "code": "TooltipContent",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/tooltip.tsx"
+  },
+  {
+    "name": "Dialog",
+    "type": "function",
+    "start_line": 8,
+    "end_line": 8,
+    "code": "Dialog",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/dialog.tsx"
+  },
+  {
+    "name": "DialogTrigger",
+    "type": "function",
+    "start_line": 14,
+    "end_line": 14,
+    "code": "DialogTrigger",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/dialog.tsx"
+  },
+  {
+    "name": "DialogPortal",
+    "type": "function",
+    "start_line": 20,
+    "end_line": 20,
+    "code": "DialogPortal",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/dialog.tsx"
+  },
+  {
+    "name": "DialogClose",
+    "type": "function",
+    "start_line": 26,
+    "end_line": 26,
+    "code": "DialogClose",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/dialog.tsx"
+  },
+  {
+    "name": "DialogOverlay",
+    "type": "function",
+    "start_line": 32,
+    "end_line": 32,
+    "code": "DialogOverlay",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/dialog.tsx"
+  },
+  {
+    "name": "DialogContent",
+    "type": "function",
+    "start_line": 48,
+    "end_line": 48,
+    "code": "DialogContent",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/dialog.tsx"
+  },
+  {
+    "name": "DialogHeader",
+    "type": "function",
+    "start_line": 74,
+    "end_line": 74,
+    "code": "DialogHeader",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/dialog.tsx"
+  },
+  {
+    "name": "DialogFooter",
+    "type": "function",
+    "start_line": 84,
+    "end_line": 84,
+    "code": "DialogFooter",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/dialog.tsx"
+  },
+  {
+    "name": "DialogTitle",
+    "type": "function",
+    "start_line": 97,
+    "end_line": 97,
+    "code": "DialogTitle",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/dialog.tsx"
+  },
+  {
+    "name": "DialogDescription",
+    "type": "function",
+    "start_line": 110,
+    "end_line": 110,
+    "code": "DialogDescription",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/dialog.tsx"
+  },
+  {
+    "name": "SidebarContextProps",
+    "type": "type",
+    "start_line": 34,
+    "end_line": 34,
+    "code": "SidebarContextProps",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/sidebar.tsx"
+  },
+  {
+    "name": "useSidebar",
+    "type": "function",
+    "start_line": 46,
+    "end_line": 46,
+    "code": "useSidebar",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/sidebar.tsx"
+  },
+  {
+    "name": "SidebarProvider",
+    "type": "function",
+    "start_line": 55,
+    "end_line": 55,
+    "code": "SidebarProvider",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/sidebar.tsx"
+  },
+  {
+    "name": "Sidebar",
+    "type": "function",
+    "start_line": 153,
+    "end_line": 153,
+    "code": "Sidebar",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/sidebar.tsx"
+  },
+  {
+    "name": "SidebarTrigger",
+    "type": "function",
+    "start_line": 255,
+    "end_line": 255,
+    "code": "SidebarTrigger",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/sidebar.tsx"
+  },
+  {
+    "name": "SidebarRail",
+    "type": "function",
+    "start_line": 281,
+    "end_line": 281,
+    "code": "SidebarRail",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/sidebar.tsx"
+  },
+  {
+    "name": "SidebarInset",
+    "type": "function",
+    "start_line": 306,
+    "end_line": 306,
+    "code": "SidebarInset",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/sidebar.tsx"
+  },
+  {
+    "name": "SidebarInput",
+    "type": "function",
+    "start_line": 320,
+    "end_line": 320,
+    "code": "SidebarInput",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/sidebar.tsx"
+  },
+  {
+    "name": "SidebarHeader",
+    "type": "function",
+    "start_line": 334,
+    "end_line": 334,
+    "code": "SidebarHeader",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/sidebar.tsx"
+  },
+  {
+    "name": "SidebarFooter",
+    "type": "function",
+    "start_line": 345,
+    "end_line": 345,
+    "code": "SidebarFooter",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/sidebar.tsx"
+  },
+  {
+    "name": "SidebarSeparator",
+    "type": "function",
+    "start_line": 356,
+    "end_line": 356,
+    "code": "SidebarSeparator",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/sidebar.tsx"
+  },
+  {
+    "name": "SidebarContent",
+    "type": "function",
+    "start_line": 370,
+    "end_line": 370,
+    "code": "SidebarContent",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/sidebar.tsx"
+  },
+  {
+    "name": "SidebarGroup",
+    "type": "function",
+    "start_line": 384,
+    "end_line": 384,
+    "code": "SidebarGroup",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/sidebar.tsx"
+  },
+  {
+    "name": "SidebarGroupLabel",
+    "type": "function",
+    "start_line": 395,
+    "end_line": 395,
+    "code": "SidebarGroupLabel",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/sidebar.tsx"
+  },
+  {
+    "name": "SidebarGroupAction",
+    "type": "function",
+    "start_line": 416,
+    "end_line": 416,
+    "code": "SidebarGroupAction",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/sidebar.tsx"
+  },
+  {
+    "name": "SidebarGroupContent",
+    "type": "function",
+    "start_line": 439,
+    "end_line": 439,
+    "code": "SidebarGroupContent",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/sidebar.tsx"
+  },
+  {
+    "name": "SidebarMenu",
+    "type": "function",
+    "start_line": 453,
+    "end_line": 453,
+    "code": "SidebarMenu",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/sidebar.tsx"
+  },
+  {
+    "name": "SidebarMenuItem",
+    "type": "function",
+    "start_line": 464,
+    "end_line": 464,
+    "code": "SidebarMenuItem",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/sidebar.tsx"
+  },
+  {
+    "name": "SidebarMenuButton",
+    "type": "function",
+    "start_line": 497,
+    "end_line": 497,
+    "code": "SidebarMenuButton",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/sidebar.tsx"
+  },
+  {
+    "name": "SidebarMenuAction",
+    "type": "function",
+    "start_line": 547,
+    "end_line": 547,
+    "code": "SidebarMenuAction",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/sidebar.tsx"
+  },
+  {
+    "name": "SidebarMenuBadge",
+    "type": "function",
+    "start_line": 579,
+    "end_line": 579,
+    "code": "SidebarMenuBadge",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/sidebar.tsx"
+  },
+  {
+    "name": "SidebarMenuSkeleton",
+    "type": "function",
+    "start_line": 601,
+    "end_line": 601,
+    "code": "SidebarMenuSkeleton",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/sidebar.tsx"
+  },
+  {
+    "name": "SidebarMenuSub",
+    "type": "function",
+    "start_line": 639,
+    "end_line": 639,
+    "code": "SidebarMenuSub",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/sidebar.tsx"
+  },
+  {
+    "name": "SidebarMenuSubItem",
+    "type": "function",
+    "start_line": 654,
+    "end_line": 654,
+    "code": "SidebarMenuSubItem",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/sidebar.tsx"
+  },
+  {
+    "name": "SidebarMenuSubButton",
+    "type": "function",
+    "start_line": 668,
+    "end_line": 668,
+    "code": "SidebarMenuSubButton",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/sidebar.tsx"
+  },
+  {
+    "name": "Separator",
+    "type": "function",
+    "start_line": 7,
+    "end_line": 7,
+    "code": "Separator",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/separator.tsx"
+  },
+  {
+    "name": "ButtonProps",
+    "type": "interface",
+    "start_line": 37,
+    "end_line": 37,
+    "code": "ButtonProps",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/button.tsx"
+  },
+  {
+    "name": "ButtonProps",
+    "type": "interface",
+    "start_line": 37,
+    "end_line": 37,
+    "code": "ButtonProps",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/button.tsx"
+  },
+  {
+    "name": "Input",
+    "type": "function",
+    "start_line": 4,
+    "end_line": 4,
+    "code": "Input",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/input.tsx"
+  },
+  {
+    "name": "Skeleton",
+    "type": "function",
+    "start_line": 2,
+    "end_line": 2,
+    "code": "Skeleton",
+    "file": "/Users/recondite/Documents/GitHub/firesearch/components/ui/skeleton.tsx"
+  }
+]

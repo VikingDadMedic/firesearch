@@ -1,0 +1,78 @@
+.
+├── app
+│   ├── api
+│   │   └── check-env
+│   │       └── route.ts
+│   ├── chat.tsx
+│   ├── citation-tooltip.tsx
+│   ├── globals.css
+│   ├── layout.tsx
+│   ├── markdown-renderer.tsx
+│   ├── page.tsx
+│   ├── search-display.tsx
+│   └── search.tsx
+├── components
+│   └── ui
+│       ├── button.tsx
+│       ├── dialog.tsx
+│       ├── input.tsx
+│       ├── pagination.tsx
+│       ├── separator.tsx
+│       ├── sheet.tsx
+│       ├── sidebar.tsx
+│       ├── skeleton.tsx
+│       └── tooltip.tsx
+├── components.json
+├── eslint.config.mjs
+├── hooks
+│   └── use-mobile.ts
+├── kit-analysis
+│   ├── chunks-agent-main.json
+│   ├── chunks-agent.json
+│   ├── chunks-chat.json
+│   ├── chunks-firecrawl.json
+│   ├── chunks-langgraph.json
+│   ├── chunks-page.json
+│   ├── chunks-search.json
+│   ├── erd.md
+│   ├── file-tree.json
+│   ├── firesearch-index.json
+│   ├── refactor.md
+│   ├── repomix-output.txt
+│   ├── symbol-names.txt
+│   ├── symbols.json
+│   ├── symbols.txt
+│   ├── tree.txt
+│   ├── usages-agent.json
+│   ├── usages-firecrawl.json
+│   └── usages-langgraph.json
+├── lib
+│   ├── config.ts
+│   ├── context-processor.ts
+│   ├── error-handler.ts
+│   ├── favicon-utils.ts
+│   ├── firecrawl.ts
+│   ├── langgraph-search-engine.ts
+│   ├── rate-limit.ts
+│   └── utils.ts
+├── next-env.d.ts
+├── next.config.ts
+├── package.json
+├── pnpm-lock.yaml
+├── postcss.config.mjs
+├── public
+│   ├── assets
+│   │   └── twemoji-fire.svg
+│   ├── favicon.ico
+│   ├── file.svg
+│   ├── firecrawl-logo-with-fire.png
+│   ├── firecrawl-logo.svg
+│   ├── globe.svg
+│   └── window.svg
+├── README.md
+├── tailwind.config.ts
+├── tree.txt
+├── tsconfig.json
+└── vercel.json
+
+11 directories, 65 files

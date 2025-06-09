@@ -1,0 +1,87 @@
+--- type: SearchPhase ---
+SearchPhase
+
+--- type: SearchPhase ---
+SearchPhase
+
+--- type: SearchEvent ---
+SearchEvent
+
+--- type: SearchEvent ---
+SearchEvent
+
+--- type: ErrorType ---
+ErrorType
+
+--- type: ErrorType ---
+ErrorType
+
+--- interface: Source ---
+Source
+
+--- interface: Source ---
+Source
+
+--- interface: SearchResult ---
+SearchResult
+
+--- interface: SearchResult ---
+SearchResult
+
+--- interface: SearchStep ---
+SearchStep
+
+--- interface: SearchStep ---
+SearchStep
+
+--- type: SearchState ---
+SearchState
+
+--- interface: GraphConfig ---
+GraphConfig
+
+--- class: LangGraphSearchEngine ---
+LangGraphSearchEngine
+
+--- class: LangGraphSearchEngine ---
+LangGraphSearchEngine
+
+--- method: constructor ---
+constructor
+
+--- method: getInitialSteps ---
+getInitialSteps
+
+--- method: buildGraph ---
+buildGraph
+
+--- method: search ---
+search
+
+--- method: getCurrentDateContext ---
+getCurrentDateContext
+
+--- method: analyzeQuery ---
+analyzeQuery
+
+--- method: checkAnswersInSources ---
+checkAnswersInSources
+
+--- method: extractSubQueries ---
+extractSubQueries
+
+--- method: generateAlternativeSearchQueries ---
+generateAlternativeSearchQueries
+
+--- method: scoreContent ---
+scoreContent
+
+--- method: summarizeContent ---
+summarizeContent
+
+--- method: generateStreamingAnswer ---
+generateStreamingAnswer
+
+--- method: generateFollowUpQuestions ---
+generateFollowUpQuestions
+

@@ -1,0 +1,18 @@
+--- class: FirecrawlClient ---
+FirecrawlClient
+
+--- class: FirecrawlClient ---
+FirecrawlClient
+
+--- method: constructor ---
+constructor
+
+--- method: scrapeUrl ---
+scrapeUrl
+
+--- method: mapUrl ---
+mapUrl
+
+--- method: search ---
+search
+
